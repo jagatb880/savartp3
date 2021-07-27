@@ -1,0 +1,58 @@
+.back-button-img {
+    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+.signup{
+    margin: 0;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+}
+.investment-name{
+    font: normal normal normal 12px/12px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+    padding-top: 5px;
+}
+.sync-bank{
+    font: normal normal normal 17px/12px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    margin: 0;
+    padding-bottom: 12px;
+    padding-top: 5px;
+}
+.image-text{
+    border-bottom: 0.5px solid #E1E7FA;
+    padding-top: 25px;
+}
+.type{
+    font: normal normal normal 12px/12px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    opacity: 1;
+    margin: 0;
+}
+.stock{
+    font: normal normal normal 16px/12px Roboto;
+    letter-spacing: 0px;
+    color: #07235C;
+    margin: 0;
+    padding-top: 7px;
+}
+.all-row{
+    padding-top: 10px;
+}
+.signupbutton1{text-transform: capitalize;
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    color: #2835D5;
+    --border-radius: 12px;
+    height: 45px;
+    margin: 31px 0px 0px 0px;
+    letter-spacing: 0px;
+    --border-width: 1px;
+    --border-color: #B5BCD8;
+    --background: #F9FAFF;}

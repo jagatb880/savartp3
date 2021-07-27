@@ -1,0 +1,99 @@
+<ion-content style="--background: #FCFCFC;">
+  <div style="margin: 25px;" [formGroup]="investmentRequest">
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="10.7" class="ion-no-padding">
+        <p class="signup">Investment Advice</p>
+      </ion-col>
+    </ion-row>
+    <div class="first-text-div">
+      <p class="first-text">Help us understand your preference</p>
+    </div>
+    <ion-row>
+      <ion-col size="6">
+        <p class="invest-amount">Investment Amount</p>
+      </ion-col>
+      <ion-col size=6>
+        <p class="avilable-balance">Available:345,900</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-item class="investment-item" lines="none">
+      <ion-input type="tel" (keypress)="numberOnlyValidation($event)" formControlName="investment_amount" class="investment-input"></ion-input>
+    </ion-item>
+
+    <p class="select-country">Select Country</p>
+    <ion-item class="slctitm" lines="none">
+      <!-- <img src="assets/svg/india.svg" class="flag"> -->
+      <ion-select formControlName="countries" multiple="true" class="select">
+        <ion-select-option value="India">India</ion-select-option>
+        <ion-select-option value="Canada">Canada</ion-select-option>
+        <ion-select-option value="USA">USA</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <p class="select-country">Select Asset Class</p>
+    <ion-item class="slctitm" lines="none">
+      <ion-select formControlName="assetclass" multiple="true" class="select">
+        <ion-select-option value="Mutual Funds">Mutual Funds</ion-select-option>
+        <ion-select-option value="Stocks">Stocks</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <p class="select-country">Select Theme</p>
+    <ion-item class="slctitm" lines="none">
+      <ion-select formControlName="theme" multiple="true" class="select">
+        <ion-select-option value="Tax-Saving">Tax-Saving</ion-select-option>
+        <ion-select-option value="Sharia">Sharia</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <p class="select-country">Comment</p>
+    <ion-item class="textarea-item" lines="none">
+      <ion-textarea formControlName="comment" placeholder="Write here"></ion-textarea>
+    </ion-item>
+    <ion-row style="margin-left: -5px;">
+      <ion-col size="1">
+        <ion-checkbox class="checkbox-square" mode="md" [(ngModel)]="isChecked" [ngModelOptions]="{standalone: true}"
+          (ionChange)="onChecked($event)"></ion-checkbox>
+      </ion-col>
+      <ion-col size="11">
+        <p class="checkbox-text">Make this a repeat request</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="isChecked === true">
+      <ion-col style="margin-left: -7px;">
+        <p class="select-country">Frequency of Advice</p>
+        <ion-item class="slctitm" lines="none">
+          <ion-select formControlName="investment_mode" class="select"
+            (ionChange)="frequenceChange()">
+            <ion-select-option value="Monthly">Monthly</ion-select-option>
+            <ion-select-option value="Weekly">Weekly</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <p class="select-country">Date</p>
+        <ion-item class="slctitm" [disabled]="enableMonthDate == undefined">
+          <img src="assets/icon/date.png" style="width: 23px;
+          margin-bottom: 2vw;">
+          <ion-select *ngIf="enableMonthDate" formControlName="investment_monthDate" style="margin-top: -2vw;margin-left:6px;color: #8B94B4;
+          opacity: 1;font-size: 14px;">
+            <ion-select-option *ngFor="let day of daysOfMonth">{{day}}</ion-select-option>
+          </ion-select>
+          <ion-select *ngIf="!enableMonthDate" formControlName="investment_weeklyDay" style="margin-top: -2vw;margin-left:6px;color: #8B94B4;
+          opacity: 1;font-size: 14px;">
+            <ion-select-option *ngFor="let day of weeksOfMonth">{{day}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-button [disabled]="!investmentRequest.valid" expand="block" class="signupbutton" (click)="requestAdvice()">Request Advice</ion-button>
+  </div>
+
+</ion-content>

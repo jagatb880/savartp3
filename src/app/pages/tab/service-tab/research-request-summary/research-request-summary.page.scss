@@ -1,0 +1,81 @@
+.back-button-img {
+    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+.signup{
+    margin: 0;
+    letter-spacing: 0px;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+}
+.applinc{
+    letter-spacing: 0px;
+    color: #000000;
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Roboto Medium';
+}
+ion-icon{
+    color: black;
+    font-size: 19px;
+    margin-left: 20px;
+}
+.full-div{
+    margin-top: 32px;
+    background: #FFFFFF;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+}
+.ion-row{
+    padding: 7px 7px 25px 7px;
+}
+.quantity{
+    letter-spacing: 0px;
+    color: #868686;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Roboto';
+    padding-top: 4px;
+}
+.mutualfund{
+    letter-spacing: 0px;
+    color: #868686;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Roboto';
+    padding-top: 1px;
+}
+.addmorebutton{
+    margin-left: 30vh;
+    margin-top: 2vh;
+    height: 40px;
+    --border-radius: 26px;
+    width: 114px;
+    /* font: normal normal normal 14px/11px Roboto; */
+    letter-spacing: 0px;
+    color: #2835D5;
+    padding-left: 0px;
+}
+.addimage{
+    width: 25%;
+    margin-left: -3px;
+}
+.button-ptag{
+    letter-spacing: 0px;
+    color: #2835D5;
+    font-size: 14px;
+    margin-left: 8px;
+    text-transform: capitalize;
+}
+.signupbutton{--background: #2835D5;
+    text-transform: capitalize;
+    font-family: 'Roboto Medium';
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    --border-radius: 12px;
+    height: 54px;
+    margin: 2vh 0 0 0;
+    letter-spacing: 0px;}

@@ -1,0 +1,38 @@
+.back-button-img {
+    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+
+.signup {
+    margin: 0;
+    letter-spacing: 0px;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.ion-no-padding {
+    text-align: center;
+}
+
+.about-savart{
+    font: 16px/12px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    margin: 0;
+    padding-top: 25px;
+}
+.use-savart{
+    margin: 0;
+    font: normal normal normal 14px/22px Roboto;
+    letter-spacing: 0px;
+    color: #24272C;
+}
+.total-row{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #24272C0D;
+}

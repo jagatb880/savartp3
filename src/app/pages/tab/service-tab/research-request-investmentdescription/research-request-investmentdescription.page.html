@@ -1,0 +1,48 @@
+<ion-content style="--background: #FCFCFC;">
+  <div style="margin: 25px;">
+    
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="10.7" class="ion-no-padding">
+        <p class="signup">Research Request</p>
+      </ion-col>
+    </ion-row>
+
+    <div class="first-text-div">
+      <p class="first-text">Add Investment Description</p>
+    </div>
+
+    <p class="select-country">Select Country</p>
+    <ion-item class="slctitm"><img src="assets/svg/india.svg" class="flag">
+      <ion-select  multiple="true" class="contryselect" >
+        <ion-select-option value="India">India</ion-select-option>
+        <ion-select-option value="Canada">Canada</ion-select-option>
+        <ion-select-option value="USA">USA</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <p class="select-country">Select Asset Class</p>
+    <ion-item class="slctitm">
+      <ion-select  multiple="true" class="select" placeholder="Select">
+        <ion-select-option value="India">Mutual Funds,Stocks</ion-select-option>
+        <!-- <ion-select-option value="Canada">Canada</ion-select-option>
+        <ion-select-option value="USA">USA</ion-select-option> -->
+      </ion-select>
+    </ion-item>
+
+    <p class="select-country">Investment Name</p>
+    <ion-item class="investment-item">
+      <p class="investment-price">Batoinc</p><ion-input class="investment-input"></ion-input>
+    </ion-item>
+
+    <p class="select-country">Comment</p>
+    <ion-item class="textarea-item">
+      <ion-textarea placeholder="write here"></ion-textarea>
+    </ion-item>
+    <ion-button expand="block" class="signupbutton" [routerLink]="[ '/tab/research-request-summary']">Save</ion-button>
+  </div>  
+</ion-content>

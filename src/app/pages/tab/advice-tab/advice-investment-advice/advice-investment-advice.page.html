@@ -1,0 +1,215 @@
+
+<ion-content style="--background: #FCFCFC;">
+  <div style="margin: 25px 25px 11px 25px;">
+    
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="7.7" class="ion-no-padding">
+        <p class="signup">Investment Advice</p>
+      </ion-col>
+      <ion-col size="3" style="text-align: end;" (click)="eyeicon()">
+        <img src="assets/svg/iicon.svg">
+      </ion-col>
+    </ion-row>
+  </div>  
+
+  <div style="padding: 0 25px;background: #E0E7FC;">
+    <ion-row class="row1" (click)="readguideline()">
+      <ion-col size="11">
+        <p class="guidelinereview">Read investment guidelines before you invest</p>
+      </ion-col>
+      <ion-col size="1" style="text-align: end;">
+        <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div style="margin: 0px 25px 25px 25px;">
+    <div class="first-text-div">
+      <ion-row (click)="openFilter()">
+        <ion-col size="11">
+          <p class="first-text">Investment Advice</p>
+        </ion-col>
+        <ion-col size="1" style="text-align: end;">
+          <img src="assets/svg/filter.svg">
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <ion-row style="margin-bottom: 4px;">
+      <ion-col size="7" style="padding-top: 1.7vh;">
+        <p class="stock">Stocks for India <img src="assets/svg/india.svg" class="indiaflag"></p>
+      </ion-col>
+      <ion-col size="1" style="padding-top: 2.1vh;text-align: start;">
+        <!-- <img src="assets/svg/india.svg"> -->
+      </ion-col>
+      <ion-col size="4" style="text-align: end;">
+        <ion-button class="button-1st">Invest</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <div class="stock-india-option">
+      <ion-row>
+        <ion-col size="4">
+          <p class="sync">SYNC <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon></p>
+        </ion-col>
+        <ion-col size="1">
+          <!-- <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon> -->
+        </ion-col>
+        <ion-col size="7"></ion-col>
+      </ion-row>
+      <ion-row style="margin-top: 5px;">
+        <ion-col size="4" style="padding-top: 9px;">
+          <p class="advice-buy">Advice - Buy <img src="assets/svg/star.svg" style="height: 9px;"></p>
+        </ion-col>
+        <ion-col size="1">
+          <!-- <img src="assets/svg/star.svg"> -->
+        </ion-col>
+        <ion-col size="7">
+          <p class="price">₹ 2,000</p>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="stock-india-option">
+      <ion-row>
+        <ion-col size="4">
+          <p class="sync">SYNC <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon></p>
+        </ion-col>
+        <ion-col size="1">
+          <!-- <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon> -->
+        </ion-col>
+        <ion-col size="7"></ion-col>
+      </ion-row>
+      <ion-row style="margin-top: 5px;">
+        <ion-col size="4" style="padding-top: 9px;">
+          <p class="advice-buy">Advice - Buy <img src="assets/svg/star.svg" style="height: 9px;"></p>
+        </ion-col>
+        <ion-col size="1">
+          <!-- <img src="assets/svg/star.svg"> -->
+        </ion-col>
+        <ion-col size="7">
+          <p class="price">₹ 2,000</p>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="stock-india-option">
+      <ion-row>
+        <ion-col size="4">
+          <p class="sync">SYNC <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon></p>
+        </ion-col>
+        <ion-col size="1">
+          <!-- <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon> -->
+        </ion-col>
+        <ion-col size="7"></ion-col>
+      </ion-row>
+      <ion-row style="margin-top: 5px;">
+        <ion-col size="4" style="padding-top: 9px;">
+          <p class="advice-buy">Advice - Buy <img src="assets/svg/star.svg" style="height: 9px;"></p>
+        </ion-col>
+        <ion-col size="1">
+          <!-- <img src="assets/svg/star.svg"> -->
+        </ion-col>
+        <ion-col size="7">
+          <p class="price">₹ 2,000</p>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <ion-row style="margin-bottom: 4px;margin-top: 14px;">
+      <ion-col size="7" style="padding-top: 1.7vh;">
+        <p class="stock">Stocks for Canada <img src="assets/svg/canada.svg" class="indiaflag"></p>
+      </ion-col>
+      <ion-col size="1" style="padding-top: 2.1vh;text-align: start;">
+        <!-- <img src="assets/svg/india.svg"> -->
+      </ion-col>
+      <ion-col size="4" style="text-align: end;">
+        <ion-button class="button-1st">Invest</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <div class="dv-canada">
+      <ion-row>
+        <ion-col size="6" class="canada-data-col">
+          <p class="sync">SYNC <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon></p>
+          <p class="dollar-price">$ 150</p>
+          <p class="appox">Appox ₹ 2,000</p>
+        </ion-col>
+        <ion-col size="6" id="advicebuy"  class="canada-data-col">
+          <p class="advice-buy">Advice - Buy <img src="assets/svg/star.svg" style="height: 9px;"></p>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="canada">
+      <p class="stock">Mutual Funds For Canada<img src="assets/svg/canada.svg" class="indiaflag"></p>
+      <p class="line">Please update info if you already bought it</p>
+    </div>
+
+    <div class="mutual-fund-div">
+      <ion-row>
+        <ion-col size="6" class="canada-data-col">
+          <p class="sync">SYNC <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon></p>
+        </ion-col>
+        <ion-col size="6" id="advicebuy">
+          <ion-button fill="outline"  class="outline-button">Update</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row >
+        <ion-col size="4" class="canada-data-col">
+          <p class="advice-buy">Advice - Buy <img src="assets/svg/star.svg" style="height: 9px;"></p>
+        </ion-col>
+        <ion-col size="1">
+          <!-- <img src="assets/svg/star.svg"> -->
+        </ion-col>
+        <ion-col size="7" >
+          <p class="price" id="add-price">₹ 2,000</p>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="mutualfund">
+      <p class="sync" id="fund">Mutual Fund <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon></p>
+      <ion-row>
+        <ion-col size="6" class="canada-data-col">
+          <p class="advice-buy">Advice - Buy <img src="assets/svg/star.svg" style="height: 9px;"></p>
+          <p class="Purchase">Purchase NAV</p>
+          <ion-input placeholder="₹ Add" class="fst-input"></ion-input>
+        </ion-col>
+        <ion-col size="6" >
+          <p class="price" id="add-price">₹ 2,000</p>
+          <p class="Purchase">Investment Amount</p>
+          <ion-input  class="fst-input">&nbsp;&nbsp;₹10,000</ion-input>
+          <div style="text-align: end;">
+            <ion-button class="button-1st">Save</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="syncedit">
+      <p class="sync" id="fund" (click)="sync()">SYNC <ion-icon name="chevron-forward-outline" class="icon-first"></ion-icon></p>
+      <ion-row class="sync-row">
+        <ion-col size="6" class="canada-data-col">
+          <p class="advice-buy">Advice - Buy <img src="assets/svg/star.svg" style="height: 9px;"></p>
+        </ion-col>
+        <ion-col size="6">
+          <p class="price" id="add-price">₹ 2,000</p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="purchase-row">
+        <ion-col size="8" class="canada-data-col">
+          <p class="purchase-invest">Purchase NAV - ₹1,000</p>
+          <p class="purchase-invest">Investment Amount - ₹10,000</p>
+        </ion-col>
+        <ion-col size="4" id="advicebuy">
+          <ion-button fill="outline"  class="outline-button">Edit</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+   </div> 
+</ion-content>

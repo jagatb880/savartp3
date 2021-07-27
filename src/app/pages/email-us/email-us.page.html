@@ -1,0 +1,33 @@
+<ion-content style="--background: #FCFCFC;">
+  <div style="padding: 25px 25px 11px 25px;">
+    <ion-row>
+      <ion-col size="2" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="8" class="ion-no-padding">
+        <p class="signup">Email us</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;" (click)="eyeicon()">
+        <!-- <img src="assets/svg/iicon.svg"> -->
+      </ion-col>
+    </ion-row>
+
+    <p class="from">From</p>
+    <ion-input placeholder="Autofilled Email ID" class="input" type="number"></ion-input>
+    <ion-row>
+      <ion-col size="6" style="padding-left: 0;padding-bottom: 0;">
+        <p class="from">From</p>
+      </ion-col>
+      <ion-col size="6" style="text-align: end;padding-right: 0;padding-bottom: 0;">
+        <p class="from">0/1000</p>
+      </ion-col>
+    </ion-row>
+    <ion-item class="textarea-item" lines="none">
+      <ion-textarea  placeholder="Enter Message"></ion-textarea>
+    </ion-item>
+
+    <ion-button  expand="block" class="verify-number" (click)="verifyNumber()">Submit</ion-button>
+  </div>  
+</ion-content>

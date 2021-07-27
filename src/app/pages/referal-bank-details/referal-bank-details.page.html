@@ -1,0 +1,42 @@
+<ion-content>
+  <div class="header-section">
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+        </div>
+      </ion-col>
+      <ion-col size="8.7" class="ion-no-padding" style="text-align: center;">
+        <p class="signup">Bank Details</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;">
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div style="padding: 84px 24px;">
+    <p class="your-name">Your Name</p>
+    <ion-item lines="none">
+      <ion-input class="passwordinput" type="text" placeholder="Enter"></ion-input>
+    </ion-item>
+
+    <p class="your-name">Bank Name</p>
+    <ion-item class="slctitm" lines="none">
+      <ion-select  class="select" placeholder="Select">
+        <ion-select-option value="Monthly">English</ion-select-option>
+        <!-- <ion-select-option value="Weekly">Weekly</ion-select-option> -->
+      </ion-select>
+    </ion-item>
+
+    <p class="your-name">IFSC</p>
+    <ion-item lines="none">
+      <ion-input class="passwordinput" type="text" placeholder="Enter"></ion-input>
+    </ion-item>
+
+    <p class="your-name">Account Number</p>
+    <ion-item lines="none">
+      <ion-input class="passwordinput" type="text" placeholder="Enter number"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="signupbutton" (click)="signup()">Claim Reward</ion-button>
+  </div>
+</ion-content>

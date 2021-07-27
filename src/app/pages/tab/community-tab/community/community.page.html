@@ -1,0 +1,19 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>community</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-item lines="none">
+    <ion-toggle (ionChange)="onClick($event)" slot="end"></ion-toggle>
+  </ion-item>
+  <div id="container" style="align-items: center;"></div>
+  <div id="container1" style="align-items: center;"></div>
+  <p>
+    <ion-chip outline [ngClass]="data.status?'chip-box-selected':'chip-box'" *ngFor="let data of datas" (click)="chipEvent(data)">
+      <ion-label>{{data.name}}</ion-label>
+      <ion-icon *ngIf="data.status" name="close"></ion-icon>
+    </ion-chip>
+  </p>
+</ion-content>

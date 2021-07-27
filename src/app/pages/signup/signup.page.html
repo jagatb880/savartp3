@@ -1,0 +1,55 @@
+<ion-content style="--background: #FCFCFC;">
+  <div class="header-section">
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+        </div>
+      </ion-col>
+      <ion-col size="10.7" class="ion-no-padding">
+        <img src="assets/icon/logo.png">
+      </ion-col>
+    </ion-row>
+  </div>
+  <div style="padding: 50px 25px 25px 25px" [formGroup]="loginForm">
+    <div class="mobile-number-title">
+      Enter mobile number
+    </div>
+  <p class="mobile-number">Mobile Number</p>
+    <ion-item [ngClass]="errorStatus?'error':'fastitem'" lines="none">
+      <!-- <img class="country-map" (click)="openSearcBox()"> -->
+      <ion-input disabled=true formControlName="custcountrycode" class="country-code" (click)="openSearcBox()"></ion-input>
+      <ion-icon name="chevron-down-outline"></ion-icon>
+      <!-- <div class="divider"></div> -->
+      <ion-input
+        formControlName="custregmobile"
+        class="numberinput"
+        type="tel"
+        placeholder="Enter Number"
+        (keypress)="numberOnlyValidation($event)"
+      ></ion-input>
+    </ion-item>
+    <div *ngIf="showAutoComplete" class="autocomplete">
+      <ion-searchbar
+        formControlName="searchText"
+        (ionChange)="search()"
+        debounce=500>
+      </ion-searchbar>
+      <ion-card lines="none" [ngClass]="datas.length>0?'auto-list':''">
+        <ion-item *ngFor="let data of datas" (click)="selectCountryCode(data.country_code)">
+              +{{data.country_code}} {{data.locname}}
+        </ion-item>
+      </ion-card>
+    </div>
+    <p *ngIf="errorStatus" style="color: red;font-size: 11px;">{{errorMsg}}</p>
+    <div class="term-condition">
+      <p> By signing up, I agree to the <u style="color: #677294;">Terms & Conditions</u> and <u style="color: #677294;">Privacy</u> <u style="color: #677294;">Policy</u> of Savart</p>
+    </div>
+  
+  </div>
+  <div style="margin-top: 9vh;">
+    <ion-button [disabled]="errorStatus" expand="block" class="send-otp" (click)="sendOtp()">Send OTP</ion-button>
+  <div style="text-align: center;">
+    <p class="account">Already have an account? <span class="login-txt">Login</span></p>
+  </div>
+  </div>
+</ion-content>

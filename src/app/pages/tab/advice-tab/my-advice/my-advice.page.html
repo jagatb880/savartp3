@@ -1,0 +1,100 @@
+<div style="padding: 5px;display: flex;">
+  <ion-buttons slot="start">
+    <ion-menu-button style="color: black;"></ion-menu-button>
+  </ion-buttons>
+  <span class="signup" slot="start">My Advice</span>
+  <div class="back-button-img" (click)="openFilter()">
+    <img src="assets/svg/filter.svg">
+  </div>
+</div>
+<ion-content class="ion-no-padding" style="--background: #FCFCFC;">
+  <div style="margin: 0px 20px 20px 20px;">
+    <div>
+      <ion-segment mode="md" [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)" value="all"
+        scrollable="true">
+        <ion-segment-button value="advice" mode="md">
+          <ion-label class="advice-tab" checked (click)="advice()">Advice</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="pending" mode="md">
+          <ion-label class="advice-tab">Pending</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="scheduled" mode="md">
+          <ion-label class="advice-tab">Scheduled</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+  </div>
+  <div *ngIf="datas and datas['investment_advice']">
+    <ion-list *ngFor="let data of datas['investment_advice']; ">
+      <div style="background: #F5F5F5;padding-left: 18px;padding-right: 22px;padding-top: 12px;padding-bottom: 12px;">
+        <ion-row>
+          <ion-col size="7">
+            <div style="display: grid;" >
+              <ion-label class="advice-type">Investment Advice</ion-label>
+              <span class="price">&#x20b9; {{data.invreqamount}}</span>
+              <!-- <span *ngIf="!show_price" class="price">{{data.invreqamount}}</span> -->
+              <span class="fund_type">{{data.assetclass}}</span>
+            </div>
+          </ion-col>
+          <ion-col size="5">
+            <div style="display: grid;float:right">
+              <!-- <span class="date">{14 April, 2020}</span> -->
+              <span class="date">{{convertDate(data.invreqdt)}}</span>
+              <div class="view-btn" (click)="advice(data)">View</div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="divider"></div>
+    </ion-list>
+  </div>
+  <div *ngIf="datas and datas['research_advice']">
+    <ion-list *ngFor="let data of datas['research_advice']">
+      <div style="background: #F5F5F5;padding-left: 18px;padding-right: 22px;padding-top: 12px;padding-bottom: 12px;">
+        <ion-row>
+          <ion-col size="7">
+            <div style="display: grid;" >
+              <ion-label class="advice-type">Research Request</ion-label>
+              <span class="price">{{data.companyname}}</span>
+              <!-- <span *ngIf="!show_price" class="price">{{data.price}}</span> -->
+              <span class="fund_type">{{data.assetclass}}</span>
+            </div>
+          </ion-col>
+          <ion-col size="5">
+            <div style="display: grid;float:right">
+              <!-- <span class="date">14 April, 2020</span> -->
+              <div class="view-btn" (click)="advice(data)">View</div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="divider"></div>
+    </ion-list>
+  </div>
+  <div *ngIf="datas and datas['portfolio_advice']">
+    <ion-list *ngFor="let data of datas['portfolio_advice']">
+      <div style="background: #F5F5F5;padding-left: 18px;padding-right: 22px;padding-top: 12px;padding-bottom: 12px;">
+        <ion-row>
+          <ion-col size="7">
+            <div style="display: grid;" >
+              <ion-label class="advice-type">Portfolio Review</ion-label>
+              <span class="price">{{data.companyname}}</span>
+              <!-- <span *ngIf="!show_price" class="price">{{data.price}}</span> -->
+              <span class="fund_type">{{data.assetclass}}</span>
+            </div>
+          </ion-col>
+          <ion-col size="5">
+            <div style="display: grid;float:right">
+              <span class="date">{{convertDate(data.purchasedate)}}</span>
+              <div class="view-btn" (click)="advice(data)">View</div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="divider"></div>
+    </ion-list>
+  </div>
+</ion-content>

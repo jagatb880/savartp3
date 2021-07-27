@@ -1,0 +1,51 @@
+<ion-content style="--background: #FCFCFC;">
+  <div style="margin: 20px;">
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="../../../assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="7.7" class="ion-no-padding">
+        <p class="signup">Filter</p>
+      </ion-col>
+      <ion-col size="3" class="ion-no-padding">
+        <p class="signup">Clear Filter</p>
+      </ion-col>
+    </ion-row>
+    <div style="margin-top: 5vh;">
+      <div class="filter-by">Filter by</div>
+      <div class="divider"></div>
+    </div>
+    <div class='read-unread'>Read/Unread</div>
+    <div style="display: flex;">
+      <ion-item lines="none">
+        <ion-checkbox value="read"></ion-checkbox>
+        <ion-label>Read</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="ion-margin-left">
+        <ion-checkbox value="unread"></ion-checkbox>
+        <ion-label>Unread</ion-label>
+      </ion-item>
+    </div>
+    <div class='sort-by'>Sort By</div>
+    <div style="display: block;">
+      <ion-item lines="none">
+        <ion-checkbox value="read"></ion-checkbox>
+        <ion-label>Investment Adivce</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-checkbox value="unread"></ion-checkbox>
+        <ion-label>Portfolio Review</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-checkbox value="unread"></ion-checkbox>
+        <ion-label>Research Request</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-checkbox value="unread"></ion-checkbox>
+        <ion-label>Rebalance Advice</ion-label>
+      </ion-item>
+    </div>
+  </div>
+</ion-content>

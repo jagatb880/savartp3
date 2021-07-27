@@ -1,0 +1,49 @@
+ion-content {
+    --background: white
+}
+
+.background {
+    background: transparent url(././../../../assets/icon/onbording.png) 0 0/100% 100% no-repeat !important;
+    ;
+    height: 70%;
+    width: 100%;
+    opacity: 1;
+    padding: 41px 0px 25px 31px;
+
+    .firsttext {
+        margin: 0;
+        font: normal normal bold 34px/38px Roboto;
+        color: #FCFCFC;
+        // text-transform: capitalize;
+        // opacity: 1;
+    }
+}
+
+.fstbuttn {
+    --border-width: 0px;
+    --background-focused: none;
+    --border-color: #5986f0;
+    background: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: blue;
+    border-radius: 11px;
+    height: 45px;
+    margin: 47px 21px 0px 21px;
+    letter-spacing: 0px;
+    // border: 1px solid blue;
+    border: 1px solid #B5BCD8;
+    font-family: 'Roboto Medium';
+}
+
+.signupbutton {
+    --background: #2835D5;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+    --border-radius: 11px;
+    height: 45px;
+    margin: 22px 21px 22px 21px;
+    letter-spacing: 0px;
+    font-family: "Roboto Medium";
+}

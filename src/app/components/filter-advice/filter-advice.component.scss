@@ -1,0 +1,52 @@
+.back-button-img {
+    width: 24px;
+    height: 24px;
+}
+
+.signup {
+    margin: 0;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.filter-by {
+    text-align: left;
+    font-family: 'Roboto Medium';
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.divider {
+    margin-top: 10px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.read-unread {
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-top: 5vh;
+}
+
+.sort-by{
+    @extend .read-unread;
+    margin-top: 3vh;
+}
+
+ion-item {
+    --background: #FCFCFC;
+}
+
+ion-label{
+    font-size: 14px !important;
+    font-family: 'Roboto' !important;
+    letter-spacing: 0px !important;
+    color: #393939 !important;
+    opacity: 1 !important;
+}

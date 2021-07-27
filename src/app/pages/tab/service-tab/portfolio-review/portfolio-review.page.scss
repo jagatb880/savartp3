@@ -1,0 +1,141 @@
+.back-button-img {
+    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+
+.signup {
+    margin: 0;
+    letter-spacing: 0px;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.first-text {
+    margin: 0;
+    letter-spacing: 0px;
+    color: #393939;
+    opacity: 1;
+    font-size: 18px;
+    // font-family: 'Roboto';
+    font-family: 'Roboto Medium';
+    padding-bottom: 4px;
+}
+
+.first-text-div {
+    border-bottom: 1px solid #EBEBEB;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.slctitm {
+    color: #393939;
+    margin-bottom: 16px;
+    height: 40px;
+    --background: #FFFFFF;
+    --border-style: none;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+}
+
+.contryselect {
+    max-width: 100%;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+
+.select {
+    max-width: 100%;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+
+.select-country {
+    font-size: 12px;
+    // margin-top: 5px !important;
+    margin: 0;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+    color: #8B94B4;
+}
+
+.flag {
+    width: 23px;
+    height: 15px;
+    margin-bottom: 11px;
+}
+
+.investment-item {
+    --background: #FFFFFF;
+    --border-style: none;
+    // margin-top: 17px;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+ion-datetime {
+    margin-top: -2vw;
+    font-size: 16px;
+    color: #000000;
+}
+
+.textarea-item {
+    color: #393939;
+    margin-bottom: 16px;
+    height: 59px;
+    --background: #FFFFFF;
+    --border-style: none;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+    --highlight-background: none;
+}
+
+.investment-price {
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Roboto';
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+ion-textarea {
+    color: #707070;
+    font-size: 14px;
+    letter-spacing: 0px;
+    margin-top: 0px;
+}
+
+.divider {
+    margin-left: 10px;
+    margin-right: 3px;
+    height: 25px;
+    width: 2px;
+    background-color: #3259E7;
+    // border: 1px solid #3259E7;
+    margin-bottom: 10px;
+}
+
+.signupbutton {
+    --background: #2835D5;
+    text-transform: capitalize;
+    font-family: 'Roboto Medium';
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    --border-radius: 12px;
+    height: 54px;
+    // margin: 31px 0px 0px 0px;
+    letter-spacing: 0px;
+}
+
+ion-input {
+    color: black;
+    margin-bottom: 9px;
+}

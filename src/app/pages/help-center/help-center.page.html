@@ -1,0 +1,120 @@
+<ion-content >
+  <!-- <div style="padding: 25px 25px 11px 25px;">
+    <ion-row>
+      <ion-col size="2" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="8" class="ion-no-padding">
+        <p class="signup">Help Center</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;" (click)="eyeicon()">
+      </ion-col>
+    </ion-row>
+  </div> -->
+
+  <div class="header-section">
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="8.7" class="ion-no-padding" style="text-align: center;">
+        <p class="summary">Help Center</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;">
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="all-div">
+      <p class="help-you-today">How can we help you today?</p>
+      <ion-searchbar type="text" debounce="700" mode="md"></ion-searchbar>
+  </div>    
+  <div style="padding: 17px 25px 11px 25px;background: #F7FBFF;">
+    <p class="faq">FAQ</p>
+    <ion-row>
+      <ion-col size="6">
+        <div class="subscription-div">
+          <p class="subscription">Subscription & Billing</p>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="subscription-div">
+          <p class="investment">Investments</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <div class="subscription-div">
+          <p class="subscription">Broking & Execution</p>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="subscription-div">
+          <p class="investment">Global Investing</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <div class="subscription-div">
+          <p class="subscription">Vantage</p>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="subscription-div">
+          <p class="investment">About Savart</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div style="padding: 0px 25px 11px 25px;background: #FFFFFF;">
+    <ion-row class="walk-row">
+      <ion-col size="10" style="display: flex;">
+        <img src="assets/icon/walk.png" class="walk-image">
+        <p class="app-walk">App walkthrough</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;">
+        <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="walk-row">
+      <ion-col size="10" style="display: flex;">
+        <img src="assets/icon/chat.png" class="walk-image">
+        <p class="app-walk">Chat with us</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;">
+        <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="walk-row" (click)="email()">
+      <ion-col size="10" style="display: flex;">
+        <img src="assets/icon/mail.png" class="walk-image">
+        <p class="app-walk">Mail us</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;">
+        <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="walk-row" (click)="schedulecall()">
+      <ion-col size="10" style="display: flex;">
+        <img src="assets/icon/call.png" class="walk-image">
+        <p class="app-walk">Schedule a call</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;">
+        <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
+  
+</ion-content>

@@ -1,0 +1,42 @@
+.line{
+    height: 4px;
+    background: #ACACAC;
+    border-radius: 10px;
+    // margin-top: 20px;
+    width: 42px;
+}
+.all{
+    padding: 18px;
+}
+.linkyourdemat{
+    letter-spacing: 0px;
+    color: #08054E;
+    margin: 0;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: 'Roboto Medium';
+    margin-top: 17px;
+}
+.requestbutton{
+    letter-spacing: 0px;
+    color: #2835D5;
+    --border-width: 0px;
+    --background-focused: none;
+    border: 1px solid #2835D5;
+    border-radius: 12px;
+    background: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Roboto';
+    line-height: 38px;
+    height: 54px;
+}
+.linkdemat-button{
+    --background: #2835D5;
+    text-transform: capitalize;
+    --border-radius: 12px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    line-height: 38px;
+    height: 54px;
+}

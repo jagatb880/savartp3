@@ -1,0 +1,110 @@
+.back-button-img {
+    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+.header-section {
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FCFCFC;
+}
+// .back-button-img {
+//     background: transparent url(././../../../assets/icon/back-button-arrow.png);
+//     width: 24px;
+//     height: 24px;
+// }
+.summary{
+    font: normal normal medium 16px/25px Roboto;
+    letter-spacing: 0px;
+    color: #101923;
+    margin: 0;
+}
+.signup {
+    margin: 0;
+    letter-spacing: 0px;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.ion-no-padding {
+    text-align: center;
+}
+.help-you-today{
+    font:  16px/22px Roboto;
+    letter-spacing: 0px;
+    color: #F8F8FF;
+    margin: 0;
+}
+.all-div{
+    padding: 96px 25px 11px 25px;
+    background: #2835D5;
+}
+ion-searchbar{
+    padding-left: 0;
+    padding-right: 0;
+    --background: #FFFFFF;
+    color: #393939;
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+}
+.faq{
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #101923;
+    margin: 0;
+}
+.subscription{
+    font: normal normal normal 16px/18px Roboto;
+    letter-spacing: 0px;
+    color: #170E9C;
+    margin: 0;
+    // transform: translate(0%, 70%);
+}
+.investment{
+    font: normal normal normal 16px/16px Roboto;
+    letter-spacing: 0px;
+    color: #170E9C;
+    margin: 0;
+    // transform: translate(0%, 70%);
+}
+.subscription-div{
+    height: 94px;
+    text-align: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #97ABF1;
+    border-radius: 4px;
+    // padding-top: 24px;
+    // padding-top: 4vh;
+    // padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+// .subscription-div :first-child {
+//     align-self: center;
+//     transform: translate(0%,70%);
+// }
+.app-walk{
+    margin: 0;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #101923;
+    padding-left: 6px;
+    padding-top: 2px;
+    
+}
+.walk-row{
+    height: 53px;
+    background: #FFFFFF;
+    align-items: center;
+    border-bottom: 1px solid #24272C0D;
+}
+.walk-image{
+    height: 27px;
+}

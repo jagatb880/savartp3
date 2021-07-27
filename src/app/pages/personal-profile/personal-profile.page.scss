@@ -1,0 +1,197 @@
+.back-button-img {
+    background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+.signup{
+    margin: 0;
+    letter-spacing: 0px;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+}
+.pagenumbering{
+    margin: 0;
+    font: normal normal normal 12px/25px Roboto;
+    letter-spacing: 0px;
+    color: #797F91;
+}
+.img-div{
+    text-align: center;
+    padding-top: 41px;
+}
+.name-text{
+    font: normal normal normal 16px/51px Roboto;
+    letter-spacing: 0.16px;
+    color: #797F91;
+    padding-top: 71px;
+    margin: 0;
+}
+.fullname{
+    font: normal normal bold 20px/26px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    margin: 0;
+    padding-top: 10px;
+}
+.member-date{
+    font: normal normal normal 13px/18px Roboto;
+    letter-spacing: 0px;
+    color: #797F91;
+    margin: 0;
+}
+.personal-profile{
+    margin: 0;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #101923;
+}
+.row{
+    height: 53px;
+    padding-top: 10px;
+}
+.arrowicon{
+    color: grey;
+}
+.edit{
+    margin: 0;
+    font: normal normal bold 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #E1EDF1;
+    text-transform: uppercase;
+    margin-top: -28px;
+}
+.image{
+    text-align: -webkit-center;
+    margin-top: 26px;
+    margin-bottom: 12px;
+}
+.firstname{
+    margin: 0;
+    font: normal normal normal 12px/22px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    padding-left: 0;
+}
+#email{
+    padding-top: 15px;
+}
+.input{
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    font: normal normal normal 12px/22px Roboto;
+    padding-left: 10px !important;
+}
+.edit-mobilenumber{
+    font-size: 14px;
+    font-family: 'Roboto Medium';    
+    letter-spacing: 0px;
+    color: #393939;
+    text-transform: uppercase;
+    margin: 0;
+}
+.dateandtime-item{
+    --background: #FFFFFF;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+    height: 40px;
+}
+.date-image{
+    height: 25px;
+    margin-bottom: 11px;
+}
+ion-datetime{
+    color: #8B94B4;
+    margin-bottom: 9px;
+}
+.slctitm {
+    color: #393939;
+    // margin-bottom: 16px;
+    height: 40px;
+    --background: #FFFFFF;
+    --border-style: none;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+}
+.select {
+    max-width: 100%;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.address{
+    font: normal normal normal 16px/51px Roboto;
+    letter-spacing: 0.16px;
+    color: #101923;
+    margin: 0;
+}
+#address-input{
+    // margin-top: 15px;
+    margin-bottom: 8px;
+}
+.adhar-passport-voter{
+    font: normal normal normal 12px/22px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.idproff{
+    font: normal normal normal 16px/16px Roboto;
+    letter-spacing: 0.16px;
+    color: #101923;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ion-button{
+    margin-top: 30px;
+    --background: #2835D5;
+    text-transform: capitalize;
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    --border-radius: 12px;
+    height: 54px;
+}
+.complete-profile{
+    margin: 0;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Roboto Medium';
+    text-transform: capitalize;
+}
+.completed{
+    font: normal normal normal 12px/14px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.save{
+    font: normal normal normal 14px/23px Roboto;
+    letter-spacing: 0px;
+    color: #2835D5;
+    text-transform: uppercase;
+    margin: 0;
+}
+ion-avatar{
+    height: 100px;
+    width: 100px;
+}
+.mobilenumber-row{
+    margin-top: 15px;
+}
+.line{
+    font: normal normal normal 14px/22px Roboto;
+    letter-spacing: 0px;
+    color: #797F91;
+    margin: 0;
+}
+#line2{
+    margin-top: 15px;
+}

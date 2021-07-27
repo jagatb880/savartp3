@@ -1,0 +1,95 @@
+<!-- <ion-header>
+  <ion-toolbar style="--background: #FCFCFC;">
+    <ion-icon name="arrow-back-outline" class="fsticn"></ion-icon>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content style="--background: #FCFCFC;">
+  <div style="margin: 25px;">
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+        </div>
+      </ion-col>
+      <ion-col size="10.7" class="ion-no-padding">
+        <!-- <p class="signup">Login</p> -->
+      </ion-col>
+    </ion-row>
+    <div class="mobile-number-title">Welcome Back</div>
+    <!-- <div class="totaldv"> -->
+    <!-- <p class="welcomebacktext">Welcome Back</p> -->
+
+
+    <ion-segment mode="md" [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)" value="all"
+      scrollable="true" class="seg">
+      <ion-segment-button value="mobilenumber" mode="md">
+        <ion-label class="mobilenumber" checked>Mobile Number</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Customerid" mode="md">
+        <ion-label class="customerid">Customer ID</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <div *ngIf="selectedSegment === 'mobilenumber'" [formGroup]="loginForm">
+      <ion-item [ngClass]="errorStatus?'error':'fastitem'" lines="none">
+        <!-- <img class="country-map" (click)="openSearcBox()"> -->
+        <ion-input disabled=true formControlName="custcountrycode" class="country-code" (click)="openSearcBox()">
+        </ion-input>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+        <ion-input formControlName="custregmobile" class="numberinput" type="tel" placeholder="Enter Number"
+          (keypress)="numberOnlyValidation($event)">
+        </ion-input>
+      </ion-item>
+      <div *ngIf="showAutoComplete" class="autocomplete">
+        <ion-searchbar formControlName="searchText" (ionChange)="search()" debounce=500>
+        </ion-searchbar>
+        <ion-card lines="none" [ngClass]="datas.length>0?'auto-list':''">
+          <ion-item *ngFor="let data of datas" (click)="selectCountryCode(data.country_code)">
+            +{{data.country_code}} {{data.locname}}
+          </ion-item>
+        </ion-card>
+      </div>
+      <p *ngIf="errorStatus" style="color: red;font-size: 11px;">{{errorMsg}}</p>
+      <ion-item [ngClass]="passwordErrorStatus?'error':'seconditem'" id="" lines="none">
+        <ion-input class="passwordinput" name="password" type="password" [type]="showPassword ? 'text':'password'"
+          placeholder="Enter Password" formControlName="password"></ion-input>
+        <!-- <ion-icon class="show" [name]="passwordToggleIcon" (click)="toggleNewPassword()"></ion-icon> -->
+        <img src="{{passwordToggleIcon}}" [name]="passwordToggleIcon" (click)="toggleNewPassword()" class="eyeimage">
+      </ion-item>
+      <p *ngIf="passwordErrorStatus" style="color: red;font-size: 11px;">{{passwordErrorMsg}}</p>
+      <ion-button [disabled]="errorStatus || passwordErrorStatus" expand="block" class="signupbutton" (click)="login()">Login</ion-button>
+      <p class="forgotpassword" [routerLink]="[ '/forgot-password']">Forgot Password?</p>
+      <!-- <ion-button expand="block" class="signupbutton">Sign up</ion-button> -->
+      <!-- <div class="signupdiv" [routerLink]='["/signup"]'>
+      <p class="signupptag">Sign up</p>
+    </div> -->
+      <ion-button expand="block" class="signupbutton1" fill="outline" [routerLink]='["/signup"]'>Sign&nbsp;<p
+          style="text-transform: lowercase;">up</p>
+      </ion-button>
+    </div>
+
+    <div *ngIf="selectedSegment === 'Customerid'" [formGroup]="customerIdForm">
+      <ion-item [ngClass]="custIdErrorStatus?'error':'seconditem'" lines="none">
+        <ion-input class="passwordinput" name="password" type="text" placeholder="Enter Customer ID"
+        formControlName="customerId"></ion-input>
+      </ion-item>
+      <p *ngIf="custIdErrorStatus" style="color: red;font-size: 11px;">{{custIdErrorMsg}}</p>
+      <ion-item [ngClass]="custPasswordErrorStatus?'error':'seconditem'" lines="none">
+        <ion-input class="passwordinput" name="password" type="password" [type]="showPassword ? 'text':'password'"
+           placeholder="Enter Password" formControlName="password"></ion-input>
+        <!-- <ion-icon class="show" [name]="passwordToggleIcon" (click)="toggleNewPassword()"></ion-icon> -->
+        <img src="{{passwordToggleIcon}}" [name]="passwordToggleIcon" (click)="toggleNewPassword()" class="eyeimage">
+      </ion-item>
+      <p *ngIf="custPasswordErrorStatus" style="color: red;font-size: 11px;">{{custPasswordErrorMsg}}</p>
+      <ion-button expand="block" class="signupbutton" (click)="login()">Login</ion-button>
+      <p class="forgotpassword" [routerLink]="[ '/forgot-password']">Forgot Password?</p>
+      <!-- <ion-button expand="block" class="signupbutton">Sign up</ion-button> -->
+      <!-- <div class="signupdiv" [routerLink]='["/signup"]'>
+      <p class="signupptag">Sign up</p>
+    </div> -->
+      <ion-button expand="block" class="signupbutton1" fill="outline" [routerLink]='["/signup"]'>Sign&nbsp;<p
+          style="text-transform: lowercase;">up</p>
+      </ion-button>
+    </div>
+    <!-- </div> -->
+  </div>
+</ion-content>

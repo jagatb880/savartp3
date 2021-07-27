@@ -1,0 +1,32 @@
+<ion-content>
+  <div style="padding: 25px;" class="img">
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/svg/white-arrow.svg">
+        </div>
+      </ion-col>
+      <ion-col size="10.7" style="text-align: end;">
+        <!-- <p class="signup">Investment Advice</p> -->
+        <img src="assets/icon/message.png" style="height: 23px;">
+      </ion-col>
+    </ion-row>
+  </div>  
+  <div style="padding: 25px;">
+    <ion-row *ngFor="let obj of data" style="padding-top: 12px;">
+      <ion-col size="1">
+        <img src="assets/icon/suscribe-right.png" style="height: 14px;
+        width: 14px;">
+      </ion-col>
+      <ion-col size="11">
+        <p class="first-text">{{obj.title}}</p>
+        <p class="second-text">{{obj.subtitle}}</p>
+      </ion-col>
+    </ion-row>
+
+    <p class="more-benifit">More benefits</p>
+    <p class="portfolio-tracking">- Portfolio tracking<br> - Auto-rebalance & exit advice<br> - 24 Investment advice requests<br> - 04 Investment reviews</p>
+
+    <ion-button expand="block" class="signupbutton" (click)="signup()">Start Investing</ion-button>
+  </div>
+</ion-content>

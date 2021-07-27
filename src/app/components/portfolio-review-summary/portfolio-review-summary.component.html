@@ -1,0 +1,36 @@
+<ion-content style="--background: #FCFCFC;">
+  <div style="margin: 25px;">
+
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="10.7" class="ion-no-padding">
+        <p class="signup">Summary</p>
+      </ion-col>
+    </ion-row>
+    <ion-list *ngFor="let data of portfolioReviewObjs" lines="none" class="ion-matgin-top">
+      <div class="full-div">
+        <ion-row class="ion-row">
+          <ion-col size="10">
+            <p class="applinc">{{data.company_name}}</p>
+            <p class="quantity">{{data.amount}} | Quantity - {{data.quantity}}</p>
+            <p class="mutualfund">{{data.assetclass}}</p>
+          </ion-col>
+          <ion-col size="2">
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-list>
+    <ion-button fill="outline" class="addmorebutton" (click)="backBtn()">
+      <img src="assets/icon/addmore.png" class="addimage">
+      <p class="button-ptag">Add More</p>
+    </ion-button>
+    <ion-button expand="block" class="signupbutton" (click)="confirmRequest()">Confirm Request
+    </ion-button>
+  </div>
+
+</ion-content>

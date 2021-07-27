@@ -1,0 +1,61 @@
+<ion-content style="--background: #FCFCFC;">
+  <div style="margin: 25px;">
+
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="10.7" class="ion-no-padding">
+        <p class="signup">Summary</p>
+      </ion-col>
+    </ion-row>
+    <div class="full-div">
+      <p class="select-country">Selected Country</p>
+      <ion-row>
+        <!-- <ion-col size="1.5">
+          <img src="assets/svg/india.svg" class="flag">
+        </ion-col>   -->
+        <ion-col size="4">
+          <p class="invest-country">{{investmentData.countries}}</p>
+        </ion-col>
+        <ion-col size="4.5">
+        </ion-col>
+        <ion-col size="2" style="margin-top: -15px;">
+          <img src="assets/icon/edit.png" class="editimage" [routerLink]="[ '/tab/investment-advice']">
+        </ion-col>
+      </ion-row>
+
+      <p class="select-country">Investment Amount</p>
+      <p class="invest-amount">{{investmentData.investment_amount}}</p>
+
+      <p class="select-country">Asset Class</p>
+      <p class="invest-amount">{{investmentData.assetclass}}</p>
+
+      <p class="select-country">Theme</p>
+      <p class="invest-amount">{{investmentData.theme}}</p>
+
+      <p class="select-country">Comment</p>
+      <p class="invest-amount">{{investmentData.comment}}</p>
+
+      <div *ngIf="investmentData.investment_mode != 'One Time'">
+        <ion-row>
+          <ion-col size="4">
+            <p class="select-country-frequency">Frequency</p>
+            <p class="invest-amount-frequency">{{investmentData.investment_mode}}</p>
+          </ion-col>
+          <ion-col size="8" *ngIf="investmentData.investment_mode == 'Monthly'">
+            <p class="select-country">Date</p>
+            <p class="invest-amount">{{investmentData.investment_monthDate}}</p>
+          </ion-col>
+          <ion-col size="8" *ngIf="investmentData.investment_mode != 'Monthly'">
+            <p class="select-country">Date</p>
+            <p class="invest-amount">{{investmentData.investment_weeklyDay}}</p>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <ion-button expand="block" class="signupbutton" (click)="confirmRequest()">Confirm Request</ion-button>
+  </div>
+</ion-content>

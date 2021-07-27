@@ -1,0 +1,51 @@
+<ion-content>
+  <div style="margin: 25px 25px 11px 25px;">
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+        </div>
+      </ion-col>
+      <ion-col size="8.7" class="ion-no-padding" style="text-align: center;">
+        <p class="signup">Investment Profile</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;">
+      </ion-col>
+    </ion-row>
+  </div>  
+
+  <div style="padding: 0 25px;background: #E0E7FC;">
+    <ion-row class="row1" (click)="readguideline()">
+      <ion-col size="11">
+        <p class="guidelinereview">Investment blacklist guidelines</p>
+      </ion-col>
+      <ion-col size="1" style="text-align: end;">
+        <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
+
+ <div style="margin: 15px 25px 25px 25px;">
+  <ion-row class="plus-div">
+    <ion-col size='1.5'>
+      <img src="assets/icon/investment-blacklist-plus.png" (click)="plusopen()" *ngIf='minus == false'>
+      <img src="assets/icon/investment-blacklist-minus.png" *ngIf='minus == true' (click)="plusminus()">
+    </ion-col>
+    <ion-col size='10.5'>
+      <p class="environment-friendly">Environment friendly</p>
+    </ion-col>
+    <div  *ngIf='minus == true'>
+    <p>
+      <ion-chip outline [ngClass]="data.status?'chip-box-selected':'chip-box'" *ngFor="let data of datas" (click)="chipEvent(data)">
+        <ion-icon *ngIf="data.status" name="close" class="close-icon"></ion-icon>
+        <ion-label>{{data.name}}</ion-label>
+      </ion-chip>
+    </p>
+    <div style="text-align: end;padding: 8px;">
+      <ion-button>Save</ion-button>
+    </div>
+  </div>
+  </ion-row>
+
+  <p class="unique"><span class="note">Note</span> <br>Our unique Vantage & EFG systems work best with the fewest restrictions possible specifications, customisations reduce the coverage of advisable investments considerably. We hence request you to make choices carefully.</p>
+ </div>
+</ion-content>

@@ -1,0 +1,123 @@
+.img{
+    background: url('./././../../../assets/icon/refer-earn-background.png')no-repeat  ;
+    height: 287px;--width: 100% !important;--webkit-background-size: cover;
+    --moz-background-size: cover;
+    content: ' ';
+    display: block;
+    background-size: cover;
+}
+.back-button-img {
+    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+
+.signup {
+    margin: 0;
+    font: normal normal normal 14px/25px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.ion-no-padding{
+    display: flex;
+    align-items: center;
+}
+.price-for-refer{
+    font: normal normal normal 21px/38px Roboto;
+    letter-spacing: 0px;
+    color: #FCFCFC;
+}
+.signupbutton {
+    --background: #2835D5;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+    --border-radius: 11px;
+    height: 45px;
+    margin: -23px 0px 22px 0px;
+    letter-spacing: 0px;
+    font-family: "Roboto Medium";
+    line-height: 38px;
+}
+.how-it-work{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto Medium';
+    letter-spacing: 0px;
+    color: #11BE74;
+    margin: 0;
+}
+.work-div{
+    display: flex;
+}
+.work-image{
+    height: 24px;
+}
+.prize-price{
+    font: normal normal bold 18px/22px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    padding-top: 8px;
+}
+.total-earning{
+    font: normal normal normal 16px/19px Roboto;
+    letter-spacing: 0px;
+    color: #424B6A;
+    margin: 0;
+}
+.prize-image{
+    height: 47px;
+}
+.my-referal{
+    font: normal normal normal 16px/37px Roboto;
+    letter-spacing: 0px;
+    color: #424B6A;
+    margin: 0;
+}
+.referal-div{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E1E7FA;
+    border-radius: 10px;
+    height: 173px;
+    padding: 17px;
+}
+.referal-date{
+    font: normal normal normal 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+}
+.number{
+    font: normal normal bold 18px/22px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+}
+.reward-ptag{
+    font: normal normal normal 14px/22px Roboto;
+    letter-spacing: 0px;
+    color: #979797;
+    margin: 0;
+}
+.price-ptag{
+    font: normal normal normal 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #11BE74;
+    margin: 0;
+}
+#extend{
+    margin-top: 15px;
+}
+.claim-my-money{
+    letter-spacing: 0px;
+    color: #2835D5;
+    text-transform: uppercase;
+    height: 44px;
+    background: #F0F4FF 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 45px;
+    font-family: 'Roboto bold';
+}

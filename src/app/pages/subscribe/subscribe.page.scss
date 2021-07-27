@@ -1,0 +1,61 @@
+.img{
+    background: url('./././../../../assets/icon/totalinvest.png')no-repeat  ;
+    height: 275px;--width: 100% !important;--webkit-background-size: cover;
+    --moz-background-size: cover;
+    content: ' ';
+    display: block;
+    background-size: cover;
+}
+.back-button-img {
+    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+// .image-div{
+//     background: url('./././../../../assets/icon/subscribex.png')no-repeat  ;
+//     height: 185px;--width: 100% !important;--webkit-background-size: cover;
+//     --moz-background-size: cover;
+//     content: ' ';
+//     display: block;
+//     background-size: cover;
+// }
+.first-text{
+    font: normal normal 300 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #424B6A;
+    margin: 0;
+}
+.second-text{
+    font-size: 16px;
+    font-family: 'Roboto Medium';
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #08054E;
+    margin: 0;
+}
+.more-benifit{
+    font-size: 17px;
+    line-height: 25px;
+    font-family: 'Roboto Medium';
+    letter-spacing: 0px;
+    color: #08054E;
+    margin: 0;
+}
+.portfolio-tracking{
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+}
+.signupbutton {
+    --background: #2835D5;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+    --border-radius: 11px;
+    height: 45px;
+    margin: 68px 0px 22px 0px;
+    letter-spacing: 0px;
+    font-family: "Roboto Medium";
+    line-height: 38px;
+}

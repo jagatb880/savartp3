@@ -1,0 +1,122 @@
+.back-button-img {
+    background: transparent url(././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
+}
+
+.enter-otp-title {
+    font-family: "Roboto Bold";
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #393939;
+    opacity: 1;
+    margin-top: 40px;
+}
+
+.signup{
+    margin: 0;
+    color: #707070;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.verify-number {
+    font-family: 'Roboto Medium';
+    --background: #2835D5;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+    --border-radius: 11px;
+    height: 45px;
+    margin: 5vh 1px 6vh 1px;
+    letter-spacing: 0px;
+}
+
+.opt-box-area {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 24vw;
+    // margin-top: 25%;
+
+    .nk-otp-box {
+        display: inline-block;
+        height: 76px;
+        width: 65px;
+        margin: 9px;
+        font-size: 18px;
+        color: #000000;
+        font-family: 'Roboto Regular';
+        text-align: center;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #67729429;
+        border-radius: 4px;
+        opacity: 1;
+    }
+
+    .nk-otp-box-first {
+        display: inline-block;
+        height: 76px;
+        width: 65px;
+        margin: 9px 9px 9px 0px;
+        font-size: 18px;
+        color: #000000;
+        font-family: 'Roboto Regular';
+        text-align: center;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #67729429;
+        border-radius: 4px;
+        opacity: 1;
+    }
+
+    .nk-otp-box:focus {
+        border: 1px solid #8a6ddc;
+        outline: none;
+        box-shadow: 0px 1px 2px;
+    }
+}
+
+.incorrect-otp{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #D92212;
+    opacity: 1;
+}
+
+.time{
+    margin-top: 5vh;
+    text-align: left;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-size: 16px;
+    height: 20px;
+}
+
+.receive-otp{
+    text-align: left;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #8B94B4;
+    opacity: 1;
+    font-size: 16px;
+}
+
+.resend{
+    text-align: left;
+    text-decoration: underline;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #C4C4C4;
+    opacity: 1;
+    font-size: 16px;
+}

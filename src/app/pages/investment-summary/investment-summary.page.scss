@@ -1,0 +1,82 @@
+.header-section {
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FCFCFC;
+}
+.back-button-img {
+    background: transparent url(././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+.summary{
+    font: normal normal medium 16px/25px Roboto;
+    letter-spacing: 0px;
+    color: #101923;
+    margin: 0;
+}
+.items{
+    font: normal normal normal 14px/12px Roboto;
+    letter-spacing: 0px;
+    color: #424B6A;
+    margin: 0;
+}
+.savartx{
+    text-align: left;
+    letter-spacing: -0.2px;
+    color: #000000;
+    // margin: 0;
+}
+.summaryone{
+    font: normal normal normal 14px/35px Roboto;
+    letter-spacing: 0px;
+    color: #424B6A;
+    margin: 0;
+}
+.subtotal{
+    font: normal normal normal 13px/25px Roboto;
+    letter-spacing: 0px;
+    color: #979797;
+    margin: 0;
+}
+.price{
+    font: normal normal normal 13px/25px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+}
+ion-col{
+    padding: 0;
+}
+.apply-coupon{
+    text-decoration: underline;
+    font: normal normal normal 13px/25px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    margin: 0;
+}
+.discount{
+    font: normal normal normal 13px/25px Roboto;
+    letter-spacing: 0px;
+    color: #11BE74;
+    margin: 0;
+}
+.total-ammount-row{
+    border-top: 1px solid #B5BCD8;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.signupbutton {
+    --background: #2835D5;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+    --border-radius: 11px;
+    height: 45px;
+    margin: 68px 0px 22px 0px;
+    letter-spacing: 0px;
+    font-family: "Roboto Medium";
+    line-height: 38px;
+}

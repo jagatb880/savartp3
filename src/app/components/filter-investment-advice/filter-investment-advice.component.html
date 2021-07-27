@@ -1,0 +1,115 @@
+<ion-content style="--background: #FCFCFC;">
+  <div style="margin: 25px 25px 11px 25px;">
+    <ion-row>
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="../../../assets/icon/back.png">
+        </div>
+      </ion-col>
+      <ion-col size="7.7" class="ion-no-padding">
+        <p class="signup">Investment Advice</p>
+      </ion-col>
+      <ion-col size="3" class="ion-no-padding">
+        <!-- <p class="signup">Clear Filter</p> -->
+      </ion-col>
+    </ion-row>
+  </div>  
+  <div style="padding: 0 25px;background: #E0E7FC;">
+    <ion-row class="row1">
+      <ion-col size="11">
+        <p class="guidelinereview">Read investment guidelines before you invest</p>
+      </ion-col>
+      <ion-col size="1" style="text-align: end;">
+        <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div style="margin: 0px 25px 0px 25px;">
+    <div class="first-text-div">
+      <ion-row (click)="openFilter()">
+        <ion-col size="11">
+          <p class="first-text">Investment Advice</p>
+        </ion-col>
+        <ion-col size="1" style="text-align: end;">
+          <img src="assets/svg/filter.svg">
+        </ion-col>
+      </ion-row>
+    </div>
+  </div> 
+  
+  <div style="margin: 10px 25px 25px 25px;">
+    <div >
+      <div class="filter-by">Filter by</div>
+      <div class="divider"></div>
+    </div>
+    <div class='read-unread'>Country</div>
+    <div style="display: block;">
+      <ion-item lines="none">
+        <ion-checkbox value="read"></ion-checkbox>
+        <img src="assets/svg/india.svg">
+        <ion-label class="cntry">India</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-checkbox value="unread"></ion-checkbox>
+        <img src="assets/svg/india.svg">
+        <ion-label class="cntry">USA</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-checkbox value="unread"></ion-checkbox>
+        <img src="assets/svg/canada.svg">
+        <ion-label class="cntry">Canada</ion-label>
+      </ion-item>
+    </div>
+    <!-- <div style="display: flex;">
+      <ion-item lines="none">
+        <ion-checkbox value="read"></ion-checkbox>
+        <ion-label>Read</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="ion-margin-left">
+        <ion-checkbox value="unread"></ion-checkbox>
+        <ion-label>Unread</ion-label>
+      </ion-item>
+    </div> -->
+    <div class='sort-by'>Asset class</div>
+    <ion-row>
+      <ion-col size="6">
+        <ion-item lines="none">
+          <ion-checkbox value="read"></ion-checkbox>
+          <ion-label>Stocks</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-checkbox value="read"></ion-checkbox>
+          <ion-label>Mutual Fund</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-checkbox value="read"></ion-checkbox>
+          <ion-label>Gold</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item lines="none" class="ion-margin-left">
+          <ion-checkbox value="unread"></ion-checkbox>
+          <ion-label>Bonds</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-checkbox value="read"></ion-checkbox>
+          <ion-label>Cash</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-checkbox value="read"></ion-checkbox>
+          <ion-label>Private Equity</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+     <!-- <div style="display: flex;">
+      <ion-item lines="none">
+        <ion-checkbox value="read"></ion-checkbox>
+        <ion-label>Read</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="ion-margin-left">
+        <ion-checkbox value="unread"></ion-checkbox>
+        <ion-label>Unread</ion-label>
+      </ion-item>
+    </div> -->
+  </div>
+</ion-content>

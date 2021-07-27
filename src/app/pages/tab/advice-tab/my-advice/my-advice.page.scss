@@ -1,0 +1,88 @@
+.back-button-img {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.signup{
+    margin: 0;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 12px;
+}
+
+.advice-tab{
+    height: 10px;
+    /* margin: 0; */
+    // padding-top: 5px;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 600;
+  }
+
+  .advice-type{
+    text-align: left;
+    font-family: 'Roboto Medium';
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+
+  .price{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #868686;
+    opacity: 1;
+    margin-top: 5px;
+  }
+
+  .fund_type{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 12px;
+    letter-spacing: -0.28px;
+    color: #8B94B4;
+    opacity: 1;
+    margin-top: 5px;
+  }
+
+  .divider{
+      border-bottom: 1px solid #dcdcdc;
+  }
+
+  .date{
+    text-align: right;
+    font-family: 'Roboto';
+    font-size: 10px;
+    letter-spacing: -0.23px;
+    color: #8B94B4;
+    opacity: 1;
+  }
+
+  .view-btn{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #293ACD;
+    border-radius: 4px;
+    opacity: 1;
+    width: 73px;
+    height: 27px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #2835D5;
+    opacity: 1;
+    margin-top: 22px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  ion-list{
+      padding-top: 0px;
+      padding-bottom: 0px;
+  }
