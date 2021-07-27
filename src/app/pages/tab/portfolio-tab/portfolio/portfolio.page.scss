@@ -204,3 +204,93 @@
   from {max-height: 500px;}
   to {max-height: 0;}
 }
+
+card-content-md{
+    padding: 10px;
+}
+
+.savart-benefits-even{
+    width: 223px;
+    height: 155px;
+    background: #F2FFF9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #E1E7FA;
+    border-radius: 14px;
+    opacity: 1;
+    margin-left: 15px;
+    padding: 18px;
+    margin-bottom: 10px;
+}
+
+.savart-benefits-odd{
+    @extend .savart-benefits-even;
+    background: #FFFCF4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #E1E7FA;
+}
+
+.container{
+  display: flex;
+  overflow-x: auto;
+}
+
+.label1 {
+    margin-top: 18px;
+    height: 17px;
+    text-align: left;
+    font: normal normal 300 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #424B6A;
+    opacity: 1;
+    font-size: 14px;
+}
+
+.label2 {
+    width: 153px;
+    height: 48px;
+    text-align: left;
+    font: normal normal medium 16px/20px Roboto;
+    letter-spacing: 0px;
+    color: #08054E;
+    font-size: 16px;
+}
+
+.start-invest{
+    width: 328px;
+    height: 54px;
+    background: #2835D5 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 10px #D5D8FF;
+    border-radius: 12px;
+    opacity: 1;
+    margin-left: 15px;
+}
+
+.start-invest-text{
+    font: normal normal medium 18px/38px Roboto;
+    letter-spacing: 0px;
+    font-size: 18px;
+    padding-left: 6vw;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+ion-icon{
+    zoom: 1.8;
+    color: white;
+}
+
+ion-col{
+    height: 100%;
+    display: block;
+    vertical-align: middle;
+}
+
+.savart-benefits{
+    width: 109px;
+    height: 19px;
+    text-align: left;
+    font: normal normal medium 16px/12px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}

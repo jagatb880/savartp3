@@ -160,6 +160,10 @@ const routes: Routes = [
     path: 'request-a-call',
     loadChildren: () => import('./pages/request-a-call/request-a-call.module').then( m => m.RequestACallPageModule)
   },
+  {
+    path: 'side-menu',
+    loadChildren: () => import('./pages/side-menu/side-menu.module').then( m => m.SideMenuPageModule)
+  },
  
 ];
 

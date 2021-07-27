@@ -7,7 +7,7 @@
             <ion-col size="6">
                 <img src="assets/icon/logo.png" class="logo">
             </ion-col>
-            <ion-col style="text-align: end;" size="6">
+            <!-- <ion-col style="text-align: end;" size="6">
                 <div style="text-align: -webkit-right;">
                     <ion-item class="slctitm">
                         <img src="assets/svg/india.svg" class="country-image">
@@ -18,11 +18,40 @@
                         </ion-select>
                     </ion-item>
                 </div>
-            </ion-col>
+            </ion-col> -->
         </ion-row>
     </ion-toolbar>
 </ion-header>
-<ion-content style="--background: #FCFCFC">
+<ion-content style="--background: #FCFCFC" [scrollEvents]="true" (ionScroll)="onScroll($event)">
+    <ion-card id="videoTag" style="margin: 15px;">
+        <div style="padding: 5px 5px 2px 5px;">
+            <iframe width="100%" height="180" src="https://www.youtube.com/embed/nkprrx-F3ko?enablejsapi=1"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </ion-card>
+    <div class="savart-benefits">Savart Benefits</div>
+    <div class="container">
+        <ion-list *ngFor="let data of savartBenefits; let i = index">
+            <div [ngClass]="i%2 == 0?'savart-benefits-even':'savart-benefits-odd'">
+                <img [src]="data.image" height="26">
+                <div class="label1">{{data.div1}}</div>
+                <div class="label2">{{data.div2}}</div>
+            </div>
+        </ion-list>
+    </div>
+    <div class="start-invest">
+        <ion-row center>
+            <ion-col size="3">
+            </ion-col>
+            <ion-col size="7" class="start-invest-text">
+                <span>Start Investing</span>
+            </ion-col>
+            <ion-col size="2" style="margin-top: 8px;">
+                <ion-icon name="arrow-forward-circle"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </div>
     <div class="portfolio-div">
         <p class="Portfolio">Portfolio</p>
         <div class="portfolio-box">
