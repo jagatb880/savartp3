@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-blog',
@@ -12,7 +13,7 @@ export class BlogPage implements OnInit {
   savartBenefits: any;
   blogs: any;
   videoPlayStatus: boolean;
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController,private location: Location) { }
 
   ngOnInit() {
     this.videoPlayStatus = true;
@@ -137,5 +138,10 @@ export class BlogPage implements OnInit {
   goToAnnoucement(blog){
     this.navCtrl.navigateForward(['side-menu/announcements']);
   }
-
+  backBtn(){
+    this.location.back();
+  }
+  guideline(){
+    this.navCtrl.navigateForward(['savart-community-guidelines']);
+  }
 }

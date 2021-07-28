@@ -2,6 +2,7 @@ import { Component, OnInit,ViewChild ,HostListener, ElementRef, AfterViewInit} f
 import SignaturePad from 'signature_pad';
 import { Base64ToGallery } from '@ionic-native/base64-to-gallery/ngx';
 import { Location } from '@angular/common';
+import { NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-signature',
@@ -14,7 +15,8 @@ export class SignaturePage implements OnInit {
   canvasWidth: number;
   canvasHeight: number;
   data: { title: string; };
-  constructor(private base64ToGallery: Base64ToGallery,private elementRef: ElementRef,private location: Location,) {
+  constructor(private base64ToGallery: Base64ToGallery,private elementRef: ElementRef,
+    private location: Location,private navCtrl: NavController) {
         this.data={'title':'This Terms of Use is drafted in conformity with the Information Technology (Intermediaries Guidelines) Rules, 2011 specified under the Information Technology Act, 2000 in order to regulate the terms and conditions of usage and access to Website (defined hereinafter) and App (defined hereinafter) and the Services (defined hereinafter). No physical or digital signature, acceptance is necessitated in order to validate this Terms. Svobodha Infinity Private Limited (hereinafter referred to as “Company”, “Savart”, “we”, “us” or “our”) is engaged into investment advisory services and distribution services and focuses in bringing people close to the market and making it simple and affordable to invest. Savart is a Corporate Registered Investment Adviser. Please read these Terms and Conditions (“Terms”) carefully before using the “Website”, www.Savart.in and Savart mobile application (“App”), collectively referred as “Platform”. Savart would offer investment advisory services (“Advisory Service”) referred as the “Service” or “Services”).'}
    }
 
@@ -62,7 +64,9 @@ export class SignaturePage implements OnInit {
       this.signaturePad.fromData(data);
     }
   }
-
+  signup(){
+    this.navCtrl.navigateRoot(['investment-summary'])
+  }
   backBtn(){
     this.location.back();
   }

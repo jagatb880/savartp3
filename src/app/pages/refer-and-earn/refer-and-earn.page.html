@@ -53,7 +53,7 @@
           <p class="number">+91 9023456789</p>
           <p class="referal-date">Referred on 24/7/21</p>
         </ion-col>
-        <ion-col size="2" style="text-align: end;">
+        <ion-col size="2" style="text-align: end;" (click)="icon()">
           <img src="assets/icon/iicon.png" style="height: 24px;">
         </ion-col>
       </ion-row>
@@ -88,6 +88,6 @@
         </ion-col>
       </ion-row>
     </div>
-    <div class="claim-my-money">Claim my money</div>
+    <div class="claim-my-money" (click)="claimmymoney()">Claim my money</div>
   </div>
 </ion-content>

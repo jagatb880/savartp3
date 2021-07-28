@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController} from '@ionic/angular';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-savart-community-guidelines',
@@ -8,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class SavartCommunityGuidelinesPage implements OnInit {
   data: { text: string; }[];
 
-  constructor() {
+  constructor(private navCtrl: NavController,private location: Location,) {
     this.data = [{'text':'The Savart community has been created to nurture a healthy discussion about investments, personal finance, research, and the capital markets in general.'},
     {'text':'Savart does not support short-term, intraday trading or speculative assets and derivatives. Hence, topics pertaining to this area are not available in the Savart community.'},
     {'text':'Discussions that digress from the community subjects and topics will be promptly deleted.'},
@@ -24,5 +26,7 @@ export class SavartCommunityGuidelinesPage implements OnInit {
 
   ngOnInit() {
   }
-
+  backBtn(){
+    this.location.back();
+  }
 }

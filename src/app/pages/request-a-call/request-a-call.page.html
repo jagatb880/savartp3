@@ -28,33 +28,35 @@
       <ion-label >Telugu</ion-label>
     </ion-segment-button>
   </ion-segment>
-<div [formGroup]="loginForm">
-  <p class="prefer-language">We will call you on this number:</p>
-  <ion-item [ngClass]="errorStatus?'error':'fastitem'" lines="none">
-    <!-- <img class="country-map" (click)="openSearcBox()"> -->
-    <ion-input disabled=true formControlName="custcountrycode" class="country-code" (click)="openSearcBox()"></ion-input>
-    <ion-icon name="chevron-down-outline"></ion-icon>
-    <!-- <div class="divider"></div> -->
-    <ion-input
-      formControlName="custregmobile"
-      class="numberinput"
-      type="tel"
-      placeholder="Enter Number"
-      (keypress)="numberOnlyValidation($event)"
-    ></ion-input>
-  </ion-item>
-  <div *ngIf="showAutoComplete" class="autocomplete">
-    <ion-searchbar
-      formControlName="searchText"
-      (ionChange)="search()"
-      debounce=500>
-    </ion-searchbar>
-    <ion-card lines="none" [ngClass]="datas.length>0?'auto-list':''">
-      <ion-item *ngFor="let data of datas" (click)="selectCountryCode(data.country_code)">
-            +{{data.country_code}} {{data.locname}}
+    <div [formGroup]="loginForm">
+      <p class="prefer-language">We will call you on this number:</p>
+      <ion-item [ngClass]="errorStatus?'error':'fastitem'" lines="none">
+        <!-- <img class="country-map" (click)="openSearcBox()"> -->
+        <ion-input disabled=true formControlName="custcountrycode" class="country-code" (click)="openSearcBox()"></ion-input>
+        <ion-icon name="chevron-down-outline" style="padding-bottom: 13px;font-size: 17px;"></ion-icon>
+        <!-- <div class="divider"></div> -->
+        <ion-input
+          formControlName="custregmobile"
+          class="numberinput"
+          type="tel"
+          placeholder="Enter Number"
+          (keypress)="numberOnlyValidation($event)"
+        ></ion-input>
       </ion-item>
-    </ion-card>
-  </div>
-</div>
+      <div *ngIf="showAutoComplete" class="autocomplete">
+        <ion-searchbar
+          formControlName="searchText"
+          (ionChange)="search()"
+          debounce=500>
+        </ion-searchbar>
+        <ion-card lines="none" [ngClass]="datas.length>0?'auto-list':''">
+          <ion-item *ngFor="let data of datas" (click)="selectCountryCode(data.country_code)">
+                +{{data.country_code}} {{data.locname}}
+          </ion-item>
+        </ion-card>
+      </div>
+    </div>
+    <ion-button  expand="block" class="send-otp" (click)="sendOtp()">Schedule a call</ion-button>
+    <p class="our-team">Our team will call you within 5 minutes</p>
   </div>
 </ion-content>

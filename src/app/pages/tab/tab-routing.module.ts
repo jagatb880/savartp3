@@ -25,19 +25,23 @@ const routes: Routes = [
       loadChildren: () => import('./portfolio-tab/portfolio/portfolio.module').then( m => m.PortfolioPageModule)
     },
     {
+      path: 'profile',
+      loadChildren: () => import('./profile-tab/profile/profile.module').then( m => m.ProfilePageModule)
+    },
+    {
       path: 'service',
       loadChildren: () => import('./service-tab/service/service.module').then( m => m.ServicePageModule)
     },
     {
       path: '',
-      redirectTo: '/tab/service',
+      redirectTo: '/tab/portfolio',
       pathMatch: 'full'
     },
   ]
   },
   {
     path: '',
-    redirectTo: '/tab/tab/service',
+    redirectTo: '/tab/tab/portfolio',
     pathMatch: 'full'
   },
   {
@@ -104,6 +108,11 @@ const routes: Routes = [
     path: 'goal-manager-calculate',
     loadChildren: () => import('./portfolio-tab/goal-manager-calculate/goal-manager-calculate.module').then( m => m.GoalManagerCalculatePageModule)
   },
+  // {
+  //   path: 'profile',
+  //   loadChildren: () => import('./profile-tab/profile/profile.module').then( m => m.ProfilePageModule)
+  // },
+ 
 ];
 
 @NgModule({

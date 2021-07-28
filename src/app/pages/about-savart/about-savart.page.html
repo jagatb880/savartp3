@@ -20,37 +20,40 @@
       </ion-col>
     </ion-row>
 
-    <p class="about-savart">About Savart</p>
-    <ion-row class="total-row">
+    <!-- <p class="about-savart">About Savart</p> -->
+    <!-- <ion-row class="total-row">
       <ion-col size="10">
         <p class="use-savart">How do I use Savart?</p>
       </ion-col>
       <ion-col size="2" style="text-align: end;">
         <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
       </ion-col>
-    </ion-row>
+    </ion-row> -->
 
-    <ion-row class="total-row">
+    <ion-row class="total-row" [routerLink]="[ '/about-savart-text']">
       <ion-col size="10">
-        <p class="use-savart">What is Savart Premium and how it is different?</p>
+        <!-- <p class="use-savart">What is Savart Premium and how it is different?</p> -->
+        <p class="use-savart">About Savart</p>
       </ion-col>
       <ion-col size="2" style="text-align: end;">
         <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
       </ion-col>
     </ion-row>
 
-    <ion-row class="total-row">
+    <ion-row class="total-row" [routerLink]="[ '/term-and-condition']">
       <ion-col size="10">
-        <p class="use-savart">How do I place a cancellation request?</p>
+        <!-- <p class="use-savart">How do I place a cancellation request?</p> -->
+        <p class="use-savart">Terms and Condtions</p>
       </ion-col>
       <ion-col size="2" style="text-align: end;">
         <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
       </ion-col>
     </ion-row>
 
-    <ion-row class="total-row">
+    <ion-row class="total-row" [routerLink]="[ '/privacy-policy']">
       <ion-col size="10">
-        <p class="use-savart">How do I edit or remove a payment method?</p>
+        <!-- <p class="use-savart">How do I edit or remove a payment method?</p> -->
+        <p class="use-savart">Privacy Policy</p>
       </ion-col>
       <ion-col size="2" style="text-align: end;">
         <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>

@@ -22,4 +22,7 @@ export class HelpCenterPage implements OnInit {
   backBtn(){
     this.location.back();
   }
+  aboutsavart(){
+    this.navCtrl.navigateForward(['about-savart'])
+  }
 }

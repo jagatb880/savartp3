@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-privacy-policy',
-  templateUrl: './privacy-policy.page.html',
-  styleUrls: ['./privacy-policy.page.scss'],
+  selector: 'app-about-savart-text',
+  templateUrl: './about-savart-text.page.html',
+  styleUrls: ['./about-savart-text.page.scss'],
 })
-export class PrivacyPolicyPage implements OnInit {
+export class AboutSavartTextPage implements OnInit {
 
   constructor(private location: Location) { }
 

@@ -11,7 +11,7 @@
   </ion-row>
 </div>
 <ion-content style="--background: #FCFCFC;" [scrollEvents]="true" (ionScroll)="onScroll($event)">
-    <div class="guideline">
+    <div class="guideline" (click)="guideline()">
       <span style="font-size: 13px;margin: auto;">Please read the Savart community guidelines.</span>
       <ion-icon name="chevron-forward-outline" style="margin: auto;"></ion-icon>
     </div>

@@ -99,7 +99,7 @@ export class SetPasswordPage implements OnInit {
           switch (response.statusCode) {
             case 0:
               this.commonSvc.showMessage(response.data)
-              this.navCtrl.navigateRoot(['tab/tab/service'])
+              this.navCtrl.navigateRoot(['tab/tab/portfolio'])
               break;
             case 1:
               this.commonSvc.showMessage("Internal server error")

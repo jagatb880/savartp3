@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-investment-blacklist',
@@ -10,10 +11,12 @@ export class InvestmentBlacklistPage implements OnInit {
   datas: { name: string; status: boolean; }[];
   minus: boolean;
 
-  constructor(private location: Location,) {
+  constructor(private location: Location,private navCtrl: NavController) {
     this.minus = false;
    }
-
+   readguideline(){
+    this.navCtrl.navigateRoot(['investment-blacklist-text'])
+   }
   ngOnInit() {
     this.datas = [
       {

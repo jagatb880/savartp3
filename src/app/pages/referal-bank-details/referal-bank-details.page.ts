@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-referal-bank-details',
@@ -8,11 +9,14 @@ import { Location } from '@angular/common';
 })
 export class ReferalBankDetailsPage implements OnInit {
 
-  constructor(private location: Location,) { }
+  constructor(private location: Location,private navCtrl: NavController) { }
 
   ngOnInit() {
   }
   backBtn(){
     this.location.back();
+  }
+  claimreward(){
+    this.navCtrl.navigateRoot(['invest-request-details-submitted'])
   }
 }

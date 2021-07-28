@@ -100,7 +100,7 @@ checkPasswords( passwordset: FormGroup) { // here we have the 'passwords' group
         switch (response.statusCode) {
           case 0:
             this.commonSvc.showMessage(response.data)
-            this.navCtrl.navigateForward(['tab/tab/service'])
+            this.navCtrl.navigateForward(['tab/tab/portfolio'])
             break;
           case 1:
             this.commonSvc.showMessage("Internal server error")

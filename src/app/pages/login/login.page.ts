@@ -199,7 +199,7 @@ export class LoginPage implements OnInit {
           this.commonSvc.showMessage(response.data.message)
           this.commonSvc.setTokenToStorage("authtoken",response.data).then(val=>{
             this.commonSvc.authToken = val.token
-            this.navCtrl.navigateRoot(['tab/tab/service'])
+            this.navCtrl.navigateRoot(['tab/tab/portfolio'])
           })
           break;
         case 1:

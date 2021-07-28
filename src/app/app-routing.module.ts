@@ -164,6 +164,10 @@ const routes: Routes = [
     path: 'side-menu',
     loadChildren: () => import('./pages/side-menu/side-menu.module').then( m => m.SideMenuPageModule)
   },
+  {
+    path: 'about-savart-text',
+    loadChildren: () => import('./pages/about-savart-text/about-savart-text.module').then( m => m.AboutSavartTextPageModule)
+  },
  
 ];
 

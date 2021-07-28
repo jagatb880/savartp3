@@ -76,4 +76,34 @@ export class RequestACallPage implements OnInit {
   ionViewDidLeave() {
     this.menuCtrl.swipeGesture(true)
   }
+  openSearcBox(){
+    if(!this.showAutoComplete)
+    this.showAutoComplete = true;
+    else
+    this.showAutoComplete = false;
+  }
+
+  search(){
+    if (this.searchText == '') { this.datas = [] }else{
+    let data = this.countryObj
+    this.datas = data.filter(item => item.locname.toLowerCase().startsWith(this.loginForm.value.searchText.toLowerCase()) )
+    }
+  }
+
+  selectCountryCode(data){
+    this.showAutoComplete = false;
+    this.loginForm.controls.searchText.setValue("");
+    this.datas = []
+    this.loginForm.controls.custcountrycode.setValue("+"+data);
+  }
+
+  numberOnlyValidation(event: any) {
+    const pattern = /[0-9.,]/;
+    let inputChar = String.fromCharCode(event.charCode);
+
+    if (!pattern.test(inputChar)) {
+      // invalid character, prevent input
+      event.preventDefault();
+    }
+  }
 }

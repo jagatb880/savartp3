@@ -33,14 +33,14 @@ export class AppComponent {
   // ];
   public appPages = [
     { title: 'Brokerage Account', url: '', },
-    { title: 'Refer and earn', url: '', },
-    { title: 'Blog', url: '', },
+    { title: 'Refer and earn', url: 'refer-and-earn', },
+    { title: 'Blog', url: 'side-menu/blog', },
   ];
   public secondappPages = [
-    { title: 'Settings', url: '',  },
-    { title: 'Feedback', url: '', },
+    { title: 'Settings', url: 'setting',  },
+    { title: 'Feedback', url: 'feedback', },
     { title: 'Generate Performance Report', url: '', },
-    { title: 'Help Center', url: '', },
+    { title: 'Help Center', url: 'help-center', },
   ];
   public thirdappPages = [
     { title: 'About Us', url: '', },
@@ -64,7 +64,9 @@ export class AppComponent {
       this.backButtonEvent();
     })
   }
-
+  subscribe(){
+    this.navCtrl.navigateRoot(['subscribe'])
+  }
   openMenu(menuItem){
     if(menuItem.subPages.length > 0){
       event.stopPropagation();

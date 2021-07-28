@@ -5,10 +5,11 @@
         <div class="back-button-img" (click)="backBtn()">
         </div>
       </ion-col>
-      <ion-col size="8.7" class="ion-no-padding">
+      <ion-col size="8.7" style="text-align: center;">
         <p class="signup">Investment Profile</p>
       </ion-col>
       <ion-col size="2" style="text-align: end;">
+        <p class="save">Save</p>
       </ion-col>
     </ion-row>
 
@@ -72,11 +73,11 @@
     <p class="gold-bond">You will be recommended Mutual Funds, Gold & Bonds</p>
     <p class="firstname">Do you wish to get your existing investments reviewed?</p>
     <div class="checkbox">
-      <ion-radio-group value="default" >
-        <ion-radio slot="start" value="eng"></ion-radio>
+      <ion-radio-group value="yes" >
+        <ion-radio slot="start" value="yes" mode="md" ></ion-radio>
       </ion-radio-group><p class="yes">Yes</p>
       <ion-radio-group value="default" >
-        <ion-radio slot="start" value="eng"></ion-radio>
+        <ion-radio slot="start" value="no" mode="md"></ion-radio>
       </ion-radio-group><p class="yes">No</p>
     </div>
 
@@ -86,7 +87,7 @@
         <ion-col size="8" style="padding-left: 0;">
           <p class="envirment-friendly">Environment friendly</p>
         </ion-col>
-        <ion-col style="text-align: end;">
+        <ion-col style="text-align: end;" (click)="investmentblacklist()">
           <img src="assets/icon/edit.png" style="height: 13px;">
         </ion-col>
       </ion-row>
