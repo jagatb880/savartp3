@@ -10,12 +10,13 @@
 }
 
 .header-section {
-    padding: 25px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background: #FCFCFC;
+    padding: 16px 25px 0px 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: #FFFFFF;
+  height: 48px;
 }
 
 #container strong {
@@ -173,10 +174,10 @@ ion-icon {
     margin-bottom: 3px;
     border: 1px solid #67729429;
     border-radius: 4px;
-    // margin-top: 45px;
-    height: 54px;
+    // margin-top: 24px;
+    height: 40px;
     padding-top: 2px;
-}
+  }
 
 .error {
     @extend .fastitem;
@@ -187,10 +188,20 @@ ion-icon {
     color: black;
     --placeholder-color: #677294;
     --placeholder-opacity: none;
-    font: normal normal normal 14px/22px Roboto;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: 21px;
     letter-spacing: 0;
     margin-left: 6px;
-}
+    margin-bottom: 2px;
+    --padding-top: 0px;
+  }
 
 .term-condition {
     margin-top: 30px;
@@ -218,7 +229,7 @@ ion-icon {
     font-size: 18px;
     color: white;
     --border-radius: 12px;
-    height: 45px;
+    height: 54px;
     letter-spacing: 0px;
     width: 335px;
     margin: auto;
@@ -249,13 +260,18 @@ ion-card {
 }
 
 .country-code {
-    max-width: 13%;
-    // max-width: 20%;
+    max-width: 12%;
     font-size: 16px;
-    opacity: 1.0;
+    opacity: 1;
     text-align: center;
+    margin-bottom: 2px;
+    --padding-top: 0px;
 }
 
 ion-input [disabled] {
     opacity: 1.0 !important;
+}
+.arrow{
+    padding-bottom: 13px;
+    font-size: 17px;
 }

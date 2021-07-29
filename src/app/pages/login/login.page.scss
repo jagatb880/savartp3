@@ -8,7 +8,20 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
+.ion-no-padding{
+  align-items: center;
+  display: flex;
+  text-align: start;
+}
+.header-section {
+  padding: 16px 25px 0px 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: #FFFFFF;
+  height: 48px;
+}
 #container strong {
   font-size: 20px;
   line-height: 26px;
@@ -60,7 +73,7 @@
 
 .eyeimage {
   width: 22px;
-  margin-right: 6px;
+  margin-bottom: 11px;
 }
 
 .auto-list {
@@ -85,14 +98,20 @@
   font-size: 18px;
   color: #2835D5;
   --border-radius: 12px;
-  height: 45px;
+  height: 54px;
   margin: 31px 0px 0px 0px;
   letter-spacing: 0px;
   --border-width: 1px;
   --border-color: #B5BCD8;
   --background: #F9FAFF;
 }
-
+.mobile-number{
+  font: normal normal normal 14px/22px Roboto;
+  letter-spacing: 0px;
+  color: #797F91;
+  margin: 0;
+  margin-top: 24px;
+}
 .back-button-img {
   background: transparent url(././../../../assets/icon/back-button-arrow.png);
   width: 24px;
@@ -197,18 +216,18 @@ ion-segment-button {
   margin-bottom: 3px;
   border: 1px solid #67729429;
   border-radius: 4px;
-  margin-top: 24px;
-  height: 54px;
+  // margin-top: 24px;
+  height: 40px;
   padding-top: 2px;
 }
 
 .seconditem {
-  margin-top: 24px;
+  // margin-top: 24px;
   --background: #FFFFFF;
   --border-style: none;
   border: 1px solid #67729429;
   border-radius: 4px;
-  height: 54px;
+  height: 40px;
   padding-top: 2px;
 }
 
@@ -230,10 +249,12 @@ ion-segment-button {
   font-variant-east-asian: normal;
   font-weight: 300;
   font-stretch: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21px;
   letter-spacing: 0;
   margin-left: 6px;
+  margin-bottom: 2px;
+  --padding-top: 0px;
 }
 
 .passwordinput {
@@ -247,12 +268,12 @@ ion-segment-button {
   font-variant-east-asian: normal;
   font-weight: 300;
   font-stretch: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21px;
   letter-spacing: 0;
-  margin-left: 6px;
-  // margin-top: 7px;
-  // margin-bottom: 7px;
+  // margin-left: 6px;
+  margin-bottom: 2px;
+  --padding-top: 0px;
 }
 
 .straightline {
@@ -271,7 +292,7 @@ ion-segment-button {
   font-size: 18px;
   color: white;
   --border-radius: 12px;
-  height: 45px;
+  height: 54px;
   margin: 31px 0px 0px 0px;
   letter-spacing: 0px;
 }
@@ -299,13 +320,19 @@ ion-segment-button {
 }
 
 .country-code {
-  max-width: 20%;
-  font-size: 16px;
-  opacity: 1.0;
-  text-align: center;
+    max-width: 12%;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+    margin-bottom: 2px;
+    --padding-top: 0px;
 }
 
 .error {
   @extend .fastitem;
   border: 1px solid #ff0000;
+}
+.arrow{
+    padding-bottom: 13px;
+    font-size: 17px;
 }

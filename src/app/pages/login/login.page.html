@@ -5,17 +5,21 @@
 </ion-header> -->
 
 <ion-content style="--background: #FCFCFC;">
-  <div style="margin: 25px;">
-    <ion-row>
-      <ion-col size="1.3" class="ion-no-padding">
-        <div class="back-button-img" (click)="backBtn()">
-        </div>
-      </ion-col>
-      <ion-col size="10.7" class="ion-no-padding">
-        <!-- <p class="signup">Login</p> -->
-      </ion-col>
-    </ion-row>
-    <div class="mobile-number-title">Welcome Back</div>
+  
+    <div class="header-section">
+      <ion-row>
+        <ion-col size="1.3" class="ion-no-padding">
+          <div class="back-button-img" (click)="backBtn()">
+          </div>
+        </ion-col>
+        <ion-col size="10.7" class="ion-no-padding">
+          <img src="assets/icon/logo.png">
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div style="margin: 70px 25px 25px 25px;">
+    <div class="mobile-number-title">Welcome back!</div>
     <!-- <div class="totaldv"> -->
     <!-- <p class="welcomebacktext">Welcome Back</p> -->
 
@@ -26,15 +30,16 @@
         <ion-label class="mobilenumber" checked>Mobile Number</ion-label>
       </ion-segment-button>
       <ion-segment-button value="Customerid" mode="md">
-        <ion-label class="customerid">Customer ID</ion-label>
+        <ion-label class="customerid">User ID</ion-label>
       </ion-segment-button>
     </ion-segment>
     <div *ngIf="selectedSegment === 'mobilenumber'" [formGroup]="loginForm">
+      <p class="mobile-number">Mobile Number</p>
       <ion-item [ngClass]="errorStatus?'error':'fastitem'" lines="none">
         <!-- <img class="country-map" (click)="openSearcBox()"> -->
         <ion-input disabled=true formControlName="custcountrycode" class="country-code" (click)="openSearcBox()">
         </ion-input>
-        <ion-icon name="chevron-down-outline"></ion-icon>
+        <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
         <ion-input formControlName="custregmobile" class="numberinput" type="tel" placeholder="Enter Number"
           (keypress)="numberOnlyValidation($event)">
         </ion-input>
@@ -49,6 +54,7 @@
         </ion-card>
       </div>
       <p *ngIf="errorStatus" style="color: red;font-size: 11px;">{{errorMsg}}</p>
+      <p class="mobile-number">Password</p>
       <ion-item [ngClass]="passwordErrorStatus?'error':'seconditem'" id="" lines="none">
         <ion-input class="passwordinput" name="password" type="password" [type]="showPassword ? 'text':'password'"
           placeholder="Enter Password" formControlName="password"></ion-input>
@@ -68,11 +74,13 @@
     </div>
 
     <div *ngIf="selectedSegment === 'Customerid'" [formGroup]="customerIdForm">
+      <p class="mobile-number">User ID</p>
       <ion-item [ngClass]="custIdErrorStatus?'error':'seconditem'" lines="none">
         <ion-input class="passwordinput" name="password" type="text" placeholder="Enter Customer ID"
         formControlName="customerId"></ion-input>
       </ion-item>
       <p *ngIf="custIdErrorStatus" style="color: red;font-size: 11px;">{{custIdErrorMsg}}</p>
+      <p class="mobile-number">Password</p>
       <ion-item [ngClass]="custPasswordErrorStatus?'error':'seconditem'" lines="none">
         <ion-input class="passwordinput" name="password" type="password" [type]="showPassword ? 'text':'password'"
            placeholder="Enter Password" formControlName="password"></ion-input>
