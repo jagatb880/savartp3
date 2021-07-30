@@ -1,5 +1,5 @@
 .back-button-img {
-    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    background: transparent url(./././../../../assets/icon/back-button-arrow.png);
     width: 24px;
     height: 24px;
 }
@@ -10,10 +10,22 @@
     color: #101923;
     font-size: 14px;
     line-height: 25px;
+    font-family: 'Roboto Medium';
 }
 
-.ion-no-padding {
-    text-align: center;
+.header-section {
+    padding: 16px 25px 0px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFFFFF;
+    height: 48px;
+    }
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
 }
 
 .choose-language {
@@ -87,7 +99,4 @@ ion-toggle {
     font: normal normal medium 16px/12px Roboto;
     letter-spacing: 0px;
     color: #393939;
-}
-#lang-age{
-    padding-top: 30px;
 }

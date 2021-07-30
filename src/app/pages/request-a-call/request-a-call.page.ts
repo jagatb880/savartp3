@@ -6,6 +6,7 @@ import { CommonService } from 'src/app/services/common.service';
 import { OnboadingService } from 'src/app/services/onboarding/onboading.service';
 import { SharedService } from 'src/app/services/shared/shared.service';
 import { MenuController } from '@ionic/angular';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-request-a-call',
@@ -22,7 +23,7 @@ export class RequestACallPage implements OnInit {
   countryObj: any;
   errorStatus: boolean;
   errorMsg: string;
-  constructor( public fb: FormBuilder, private networkSvc: NetworkService, private commonSvc: CommonService,
+  constructor(private location: Location, public fb: FormBuilder, private networkSvc: NetworkService, private commonSvc: CommonService,
     private onboardingSvc: OnboadingService, private sharedSvc: SharedService, private menuCtrl: MenuController) {
     this.createLoginForm();
    }
@@ -105,5 +106,9 @@ export class RequestACallPage implements OnInit {
       // invalid character, prevent input
       event.preventDefault();
     }
+  }
+
+  backBtn(){
+    this.location.back();
   }
 }

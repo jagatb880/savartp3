@@ -43,5 +43,13 @@
         </ion-row>
         <ion-progress-bar [value]="p_bar_value" ></ion-progress-bar>
       </div>
+
+      <div style="display: flex;margin-top: 70px;">
+        <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreached ? 'green' :'white'}"></ion-icon>
+        <ion-progress-bar [value]="r_bar_value" ></ion-progress-bar>
+        <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreachedome ? 'green' :'#B5BCD8'}"></ion-icon>
+        <ion-progress-bar [value]="k_bar_value" ></ion-progress-bar>
+        <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreachedome ? 'green' :'#B5BCD8'}"></ion-icon>
+      </div>
   </div>  
 </ion-content>

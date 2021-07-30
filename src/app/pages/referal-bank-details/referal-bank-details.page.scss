@@ -12,12 +12,18 @@
     line-height: 25px;
 }
 .header-section {
-    padding: 25px;
+    padding: 16px 25px 0px 25px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-    background: #FCFCFC;
+    background: #FFFFFF;
+    height: 48px;
+    }
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
 }
 .your-name{
     font: normal normal normal 14px/24px Roboto;

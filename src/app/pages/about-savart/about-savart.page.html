@@ -1,24 +1,17 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>about-savart</ion-title>
-  </ion-toolbar>
-</ion-header> -->
-
 <ion-content style="--background: #FCFCFC;">
-  <div style="padding: 25px 25px 11px 25px;">
-    <ion-row>
-      <ion-col size="2" class="ion-no-padding">
+  <div class="header-section">
+    <ion-row style="margin-top: -8px;">
+      <ion-col size="1.3" class="ion-no-padding">
         <div class="back-button-img" (click)="backBtn()">
-          <img src="assets/icon/back.png">
         </div>
       </ion-col>
-      <ion-col size="8" class="ion-no-padding">
+      <ion-col size="8.7" style="text-align: center;">
         <p class="signup">About Savart</p>
       </ion-col>
-      <ion-col size="2" style="text-align: end;" (click)="eyeicon()">
-        <!-- <img src="assets/svg/iicon.svg"> -->
+      <ion-col size="2" style="text-align: end;">
       </ion-col>
     </ion-row>
+  </div>
 
     <!-- <p class="about-savart">About Savart</p> -->
     <!-- <ion-row class="total-row">
@@ -29,35 +22,35 @@
         <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
       </ion-col>
     </ion-row> -->
+    <div style="margin: 50px 25px 25px 25px;">
+        <ion-row class="total-row" [routerLink]="[ '/about-savart-text']">
+          <ion-col size="10">
+            <!-- <p class="use-savart">What is Savart Premium and how it is different?</p> -->
+            <p class="use-savart">About Savart</p>
+          </ion-col>
+          <ion-col size="2" style="text-align: end;">
+            <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
+          </ion-col>
+        </ion-row>
 
-    <ion-row class="total-row" [routerLink]="[ '/about-savart-text']">
-      <ion-col size="10">
-        <!-- <p class="use-savart">What is Savart Premium and how it is different?</p> -->
-        <p class="use-savart">About Savart</p>
-      </ion-col>
-      <ion-col size="2" style="text-align: end;">
-        <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
-      </ion-col>
-    </ion-row>
+        <ion-row class="total-row" [routerLink]="[ '/term-and-condition']">
+          <ion-col size="10">
+            <!-- <p class="use-savart">How do I place a cancellation request?</p> -->
+            <p class="use-savart">Terms and Condtions</p>
+          </ion-col>
+          <ion-col size="2" style="text-align: end;">
+            <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
+          </ion-col>
+        </ion-row>
 
-    <ion-row class="total-row" [routerLink]="[ '/term-and-condition']">
-      <ion-col size="10">
-        <!-- <p class="use-savart">How do I place a cancellation request?</p> -->
-        <p class="use-savart">Terms and Condtions</p>
-      </ion-col>
-      <ion-col size="2" style="text-align: end;">
-        <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
-      </ion-col>
-    </ion-row>
-
-    <ion-row class="total-row" [routerLink]="[ '/privacy-policy']">
-      <ion-col size="10">
-        <!-- <p class="use-savart">How do I edit or remove a payment method?</p> -->
-        <p class="use-savart">Privacy Policy</p>
-      </ion-col>
-      <ion-col size="2" style="text-align: end;">
-        <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
-      </ion-col>
-    </ion-row>
+        <ion-row class="total-row" [routerLink]="[ '/privacy-policy']">
+          <ion-col size="10">
+            <!-- <p class="use-savart">How do I edit or remove a payment method?</p> -->
+            <p class="use-savart">Privacy Policy</p>
+          </ion-col>
+          <ion-col size="2" style="text-align: end;">
+            <ion-icon name="chevron-forward-outline" style="color: grey;"></ion-icon>
+          </ion-col>
+        </ion-row>
   </div>
 </ion-content>

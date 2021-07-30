@@ -9,18 +9,46 @@ import { Location } from '@angular/common';
 })
 export class GoalManagerPage implements OnInit {
   p_bar_value: number;
-  constructor(private navCtrl: NavController,private location: Location) { }
+  r_bar_value:number;
+  k_bar_value:number;
+  planreached : boolean;
+  planreachedome: boolean;
+  pehla: number;
+  constructor(private navCtrl: NavController,private location: Location) { 
+    this.planreached = true;
+    this.planreachedome = false
+    this.setPercentBar()
+    this.firststausbar()
+    this.secondstausbar()
+  }
 
   ngOnInit() {
   }
   
-  setPercentBar(i) {
+  setPercentBar() {
     setTimeout(() => {
-      let apc = (i / 100)
+      let apc = (16 / 100)
       console.log(apc);
       this.p_bar_value = apc;
-    }, 30 * i);
+    }, );
   }
+
+  firststausbar() {
+    setTimeout(() => {
+      let apc = (99 / 100)
+      console.log(apc);
+      this.r_bar_value = apc;
+    }, );
+  }
+  secondstausbar() {
+    setTimeout(() => {
+      let apc = (0 / 100)
+      console.log(apc);
+      this.k_bar_value = apc;
+    }, );
+  }
+ 
+
 
   edit(){
     this.navCtrl.navigateForward(['/tab/goal-manager-calculate'])

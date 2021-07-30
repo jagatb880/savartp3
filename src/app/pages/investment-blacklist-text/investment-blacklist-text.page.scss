@@ -9,14 +9,21 @@
     color: #101923;
     font-size: 14px;
     line-height: 25px;
+    font-family: 'Roboto Medium';
 }
 .header-section {
-    padding: 25px;
+    padding: 16px 25px 0px 25px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-    background: #FCFCFC;
+    background: #FFFFFF;
+    height: 48px;
+    }
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
 }
 .blacklist-text{
     font: normal normal normal 14px/17px Roboto;

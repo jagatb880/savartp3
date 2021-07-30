@@ -9,6 +9,15 @@
     display: flex;
     text-align: start;
 }
+.header-section {
+  padding: 16px 25px 0px 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: #FFFFFF;
+  height: 48px;
+}
 
 .enter-otp-title {
     font-family: "Roboto Bold";
@@ -33,7 +42,7 @@
     font-size: 18px;
     color: white;
     --border-radius: 11px;
-    height: 45px;
+    height: 54px;
     margin: 5vh 1px 6vh 1px;
     letter-spacing: 0px;
 }
