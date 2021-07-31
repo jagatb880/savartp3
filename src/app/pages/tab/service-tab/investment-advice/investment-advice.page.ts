@@ -12,13 +12,20 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./investment-advice.page.scss'],
 })
 export class InvestmentAdvicePage implements OnInit {
-  isChecked:false;
+  isRepeatRequest:false;
+  isSpecialRequest:false;
   selectedFrequency: number;
   daysOfMonth: number[]
   weeksOfMonth: number[]
   dayList: number[];
   investmentRequest: FormGroup;
   enableMonthDate: boolean;
+  addCountryIndexs: any[];
+  addCountryObj = {
+    "country":"",
+    "investment":0
+  }
+  datas: any;
   constructor(private location: Location, private fb: FormBuilder, private commonSvc: CommonService,
     private networkSvc: NetworkService, private navCtrl: NavController) { 
     this.createInvestmentRequestForm();
@@ -28,6 +35,26 @@ export class InvestmentAdvicePage implements OnInit {
     this.dayList = [];
     this.daysOfMonth = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
     this.weeksOfMonth = [1,2,3,4]
+    this.addCountryIndexs = [];
+    this.addCountryIndexs.push(this.addCountryObj);
+    this.datas = [
+      {
+        "name":"ELSS (Tax-Saving MF)",
+        "status":false
+      },
+      {
+        "name":"New Fund Offers coverage",
+        "status":false
+      },
+      {
+        "name":"Micro-cap investments",
+        "status":false
+      },
+      {
+        "name":"IPO coverage",
+        "status":false
+      }
+    ]
   }
 
   createInvestmentRequestForm(){
@@ -45,10 +72,19 @@ export class InvestmentAdvicePage implements OnInit {
       investment_secondFortDate:[null]
     });
   }
-  onChecked(event){
+  onSpecialRequest(event){
+    this.isSpecialRequest = event.detail.checked;
+    if(this.isRepeatRequest){
+
+    }else{
+
+    }
+  }
+
+  onRepeatRequest(event){
     console.log(event.detail.checked);
-    this.isChecked = event.detail.checked;
-    if(this.isChecked){
+    this.isRepeatRequest = event.detail.checked;
+    if(this.isRepeatRequest){
       this.investmentRequest.get('investment_mode').setValidators([Validators.required])
       this.investmentRequest.get('investment_mode').updateValueAndValidity();
     }else{
@@ -111,6 +147,18 @@ export class InvestmentAdvicePage implements OnInit {
       }
     }else{
 
+    }
+  }
+
+  addCountry(){
+    this.addCountryIndexs.push(this.addCountry)
+  }
+
+  chipEvent(data){
+    if(data.status){
+      data.status = false;
+    }else{
+      data.status = true;
     }
   }
 }

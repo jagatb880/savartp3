@@ -1,0 +1,80 @@
+<div class="header-section">
+  <ion-row>
+    <ion-col size="1.3" class="ion-no-padding">
+      <div class="back-button-img" (click)="backBtn()">
+        <img src="assets/icon/back.png">
+      </div>
+    </ion-col>
+    <ion-col size="3.7" class="ion-no-padding">
+      <img src="assets/icon/logo.png">
+    </ion-col>
+    <ion-col size="7">Rebalance</ion-col>
+  </ion-row>
+</div>
+<ion-content style="--background: #FCFCFC;">
+  <app-guideline-header heading="Read investment guidelines before you invest." (onButtonTap)="goToAnnoucement()">
+  </app-guideline-header>
+  <div class="rebalance-update">
+    <span class="rebalance-update-text">Rebalance Update</span>
+    <span style="float: right;">
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </span>
+    <p class="rebalance-update-desc">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor …see more
+    </p>
+  </div>
+  <!-- <div style="float: left;display: flex; margin:15px 15px">
+    <span>Stock</span>
+    <span>India</span>
+  </div> -->
+  <ion-list *ngFor="let data of savingTypes">
+    <div class="stock-container">
+      <div style="margin-bottom: 15px;"><span class="stock-text">Stock <span class="country">India</span></span>
+        <span style="float: right;">
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+      </div>
+      <div *ngIf="true">
+        <div class="stock-data">
+          <ion-row>
+            <ion-col size="6">
+              <div class="sync-text">SYNC <ion-icon name="chevron-forward-outline" style="zoom: 1;margin-top: 2px;">
+                </ion-icon>
+              </div>
+              <div style="margin-top: 15px;">2000</div>
+            </ion-col>
+            <ion-col size="6">
+              <div style="float: right;">
+                <div class="advice-text">Advice<span class="buy-text">BUY</span></div>
+                <div style="margin-top: 22px;display: flex;">
+                  <ion-icon name="checkmark-circle" style="color: #2835D5;zoom:1"></ion-icon><span
+                    class="investment-text">Invested</span>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div class="stock-data">
+          <ion-row>
+            <ion-col size="6">
+              <div class="sync-text">SYNC <ion-icon name="chevron-forward-outline" style="zoom: 1;margin-top: 2px;">
+                </ion-icon>
+              </div>
+              <div style="margin-top: 15px;">2000</div>
+            </ion-col>
+            <ion-col size="6">
+              <div style="float: right;">
+                <div class="advice-text">Advice<span class="buy-text">BUY</span></div>
+                <div style="margin-top: 22px;display: flex;">
+                  <ion-icon name="checkmark-circle" style="color: #2835D5;zoom:1"></ion-icon><span
+                    class="investment-text">Invested</span>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </div>
+    <div style="border-bottom: 1px solid grey;margin-top:35px;opacity: 0.3;"></div>
+  </ion-list>
+</ion-content>

@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BlogPageRoutingModule } from './blog-routing.module';
+import { MyAdviceViewPageRoutingModule } from './my-advice-view-routing.module';
 
-import { BlogPage } from './blog.page';
+import { MyAdviceViewPage } from './my-advice-view.page';
 import { GuidelineHeaderComponentModule } from 'src/app/components/guideline-header/guideline-header.module';
 
 @NgModule({
@@ -15,8 +15,8 @@ import { GuidelineHeaderComponentModule } from 'src/app/components/guideline-hea
     FormsModule,
     IonicModule,
     GuidelineHeaderComponentModule,
-    BlogPageRoutingModule
+    MyAdviceViewPageRoutingModule
   ],
-  declarations: [BlogPage]
+  declarations: [MyAdviceViewPage]
 })
-export class BlogPageModule {}
+export class MyAdviceViewPageModule {}

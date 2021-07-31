@@ -135,7 +135,7 @@ export class BlogPage implements OnInit {
     return isVisible;
   }
 
-  goToAnnoucement(blog){
+  goToAnnoucement(){
     this.navCtrl.navigateForward(['side-menu/announcements']);
   }
   backBtn(){

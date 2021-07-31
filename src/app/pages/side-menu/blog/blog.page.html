@@ -1,20 +1,23 @@
-<div class="header-section">
-  <ion-row>
-    <ion-col size="1.3" class="ion-no-padding">
-      <div class="back-button-img" (click)="backBtn()">
-        <img src="assets/icon/back.png">
-      </div>
-    </ion-col>
-    <ion-col size="10.7" class="ion-no-padding">
-      <p class="signup">Blog</p>
-    </ion-col>
-  </ion-row>
-</div>
-<ion-content style="--background: #FCFCFC;" [scrollEvents]="true" (ionScroll)="onScroll($event)">
-    <div class="guideline" (click)="guideline()">
-      <span style="font-size: 13px;margin: auto;">Please read the Savart community guidelines.</span>
-      <ion-icon name="chevron-forward-outline" style="margin: auto;"></ion-icon>
-    </div>
+<div style="--background: #FCFCFC;">
+  <div class="header-section">
+    <ion-row style="margin-top: -8px;">
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back-button-arrow.png">
+        </div>
+      </ion-col>
+      <ion-col size="8.7" style="text-align: center;">
+        <p class="signup">Blog</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;">
+        <!-- <p class="save">Save</p> -->
+      </ion-col>
+    </ion-row>
+  </div>
+  </div>
+  <ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)">
+    <app-guideline-header heading="Please read the Savart community guidelines." (onButtonTap)="goToAnnoucement()">
+    </app-guideline-header>
     <div class="container">
       <ion-list *ngFor="let data of datas">
         <div class="types">{{data.name}}</div>
@@ -28,7 +31,7 @@
         </div>
       </ion-list>
     </div>
-    <div >
+    <div>
       <ion-list *ngFor="let blog of blogs;">
         <ion-row style="margin:15px" *ngIf="blog.type == 'blog'" (click)="goToAnnoucement(blog)">
           <ion-col size="9">
@@ -45,7 +48,7 @@
         </ion-row>
         <ion-card id="videoTag" style="margin: 15px;" *ngIf="blog.type != 'blog'">
           <div style="padding: 5px 5px 2px 5px;">
-              <iframe width="100%" height="180" src="https://www.youtube.com/embed/nkprrx-F3ko?enablejsapi=1"
+            <iframe width="100%" height="180" src="https://www.youtube.com/embed/nkprrx-F3ko?enablejsapi=1"
               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>

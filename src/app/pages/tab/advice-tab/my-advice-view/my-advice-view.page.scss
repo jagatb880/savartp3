@@ -1,0 +1,116 @@
+.header-section {
+    padding: 25px 25px 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFFFFF;
+    height: 48px;
+}
+
+.back-button-img {
+    width: 24px;
+    height: 24px;
+}
+
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
+}
+
+.rebalance-update{
+    margin: 10px 20px;
+    padding: 15px 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+    opacity: 1;
+    height: 8em;
+}
+
+.rebalance-update-text{
+    float: left;
+    text-align: left;
+    font-family: 'Roboto Medium';
+    letter-spacing: 0px;
+    color: #393939;
+    font-size: 16px;
+}
+
+.rebalance-update-desc{
+    text-align: left;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    font-size: 15px;
+    margin-top: 12px;
+    display: inline-flex;
+}
+
+ion-icon{
+    zoom: 1.4;
+}
+
+.stock-text{
+    font-size: 17px;
+    font: 'Roboto';
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.stock-container{
+    margin: 15px 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.stock-data{
+    border: 1px solid #67729429;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 10px 8px;
+    margin-top: 12px;
+}
+
+.sync-text{
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #707070;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: flex;
+}
+
+.advice-text{
+    font-size: 12px;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #8B94B4;
+}
+
+.buy-text{
+    font-size: 14px;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #11BE74;
+    margin-left: 3px;
+}
+
+.sell-text{
+    @extend .buy-text;
+    columns: #E27B82;
+}
+
+.investment-text{
+    font-size: 12px;
+    color: #2835D5;
+    margin-top: 2px;
+}
+
+.country{
+    font-size: 14px;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #080E14;
+    margin-left: 10px
+}

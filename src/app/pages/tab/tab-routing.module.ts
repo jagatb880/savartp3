@@ -108,6 +108,10 @@ const routes: Routes = [
     path: 'goal-manager-calculate',
     loadChildren: () => import('./portfolio-tab/goal-manager-calculate/goal-manager-calculate.module').then( m => m.GoalManagerCalculatePageModule)
   },
+  {
+    path: 'my-advice-view',
+    loadChildren: () => import('./advice-tab/my-advice-view/my-advice-view.module').then( m => m.MyAdviceViewPageModule)
+  },
   // {
   //   path: 'profile',
   //   loadChildren: () => import('./profile-tab/profile/profile.module').then( m => m.ProfilePageModule)
