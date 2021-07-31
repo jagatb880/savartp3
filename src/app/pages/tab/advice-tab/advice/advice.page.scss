@@ -1,0 +1,92 @@
+.header-section {
+    padding: 25px 25px 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFFFFF;
+    height: 48px;
+}
+
+.back-button-img {
+    width: 24px;
+    height: 24px;
+}
+
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
+}
+
+.heading-bold{
+    font-size: 16px;
+    font-family: 'Roboto Medium';
+    letter-spacing: 0px;
+    color: #393939;
+}
+
+.sub-heading-bold{
+    @extend .sub-heading;
+    font-size: 16px;
+    width: 90%;
+}
+
+.heading{
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #8B94B4;
+}
+
+.sub-heading{
+    font-size: 17px;
+    text-align: left;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #393939;
+}
+
+.hr-line{
+    border-bottom:1px solid grey;
+    opacity: 0.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ion-col{
+    padding-inline-start: 0px
+}
+
+.row-data{
+    font-size: 16px;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #393939;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.row-data-padding{
+    @extend .row-data;
+    padding-left: 20px;
+}
+
+.row-heading{
+    color: #0D131A;
+    font-size: 14px;
+    background: #f6f6f6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.row-heading-padding{
+    @extend .row-heading;
+    padding-left: 20px;
+}
+
+.table-head{
+    padding-left: 20px;
+}

@@ -112,6 +112,10 @@ const routes: Routes = [
     path: 'my-advice-view',
     loadChildren: () => import('./advice-tab/my-advice-view/my-advice-view.module').then( m => m.MyAdviceViewPageModule)
   },
+  {
+    path: 'advice',
+    loadChildren: () => import('./advice-tab/advice/advice.module').then( m => m.AdvicePageModule)
+  },
   // {
   //   path: 'profile',
   //   loadChildren: () => import('./profile-tab/profile/profile.module').then( m => m.ProfilePageModule)
