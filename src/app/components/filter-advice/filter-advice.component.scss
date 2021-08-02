@@ -41,6 +41,7 @@
 
 ion-item {
     --background: #FCFCFC;
+    height: 42px;
 }
 
 ion-label{
@@ -49,4 +50,27 @@ ion-label{
     letter-spacing: 0px !important;
     color: #393939 !important;
     opacity: 1 !important;
+}
+.clear-button{
+    letter-spacing: 0px;
+    color: #2835D5;
+    height: 54px;
+    --border-radius: 12px;
+    --background: white;
+    font-size: 18px;
+    font-family: 'Roboto Medium';
+    text-transform: capitalize;
+    line-height: 38px;
+}
+.apply-button{
+    height: 54px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    --background: #2835D5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #d5d8ff29;
+    --border-radius: 12px;
+    font-size: 18px;
+    font-family: 'Roboto Medium';
+    text-transform: capitalize;
+    line-height: 38px;
 }

@@ -64,6 +64,11 @@
 ion-icon{
     padding: 1px;
     border-radius: 28px;
-    border: 6px solid;
+    border: 3px solid;
     margin-top: -12px;
 }
+ion-progress-bar {
+    --background: green;
+    --buffer-background: #DEDEDE;
+    --progress-background:#11BE74;
+  }

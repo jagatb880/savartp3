@@ -7,17 +7,17 @@
         </div>
       </ion-col>
       <ion-col size="7.7" class="ion-no-padding">
-        <p class="signup">Filter</p>
+        <img src="assets/icon/logo.png" style="padding-top: 3px;">
       </ion-col>
       <ion-col size="3" class="ion-no-padding">
         <p class="signup">Clear Filter</p>
       </ion-col>
     </ion-row>
-    <div style="margin-top: 5vh;">
+    <!-- <div style="margin-top: 5vh;">
       <div class="filter-by">Filter by</div>
       <div class="divider"></div>
-    </div>
-    <div class='read-unread'>Read/Unread</div>
+    </div> -->
+    <div class='read-unread'>Filter</div>
     <div style="display: flex;">
       <ion-item lines="none">
         <ion-checkbox value="read"></ion-checkbox>
@@ -32,20 +32,28 @@
     <div style="display: block;">
       <ion-item lines="none">
         <ion-checkbox value="read"></ion-checkbox>
-        <ion-label>Investment Adivce</ion-label>
+        <ion-label>Advice Request</ion-label>
       </ion-item>
       <ion-item lines="none">
         <ion-checkbox value="unread"></ion-checkbox>
-        <ion-label>Portfolio Review</ion-label>
+        <ion-label>Investment Review</ion-label>
       </ion-item>
       <ion-item lines="none">
         <ion-checkbox value="unread"></ion-checkbox>
-        <ion-label>Research Request</ion-label>
+        <ion-label>Rebalance Update</ion-label>
       </ion-item>
-      <ion-item lines="none">
+      <!-- <ion-item lines="none">
         <ion-checkbox value="unread"></ion-checkbox>
         <ion-label>Rebalance Advice</ion-label>
-      </ion-item>
+      </ion-item> -->
+      <ion-row>
+        <ion-col size="6">
+          <ion-button expand="block"  class="clear-button">Clear</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button expand="block"  class="apply-button">Apply</ion-button>
+        </ion-col>
+      </ion-row>
     </div>
   </div>
 </ion-content>

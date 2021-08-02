@@ -83,6 +83,7 @@ export class MyAdvicePage implements OnInit {
   async openFilter(event: any) {
     const popover = await this.modalCtrl.create({
       component: FilterAdviceComponent,
+      cssClass: 'filter-modal-class',
     });
     return await popover.present();
   }

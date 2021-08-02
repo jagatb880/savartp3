@@ -13,10 +13,12 @@ export class GoalManagerPage implements OnInit {
   k_bar_value:number;
   planreached : boolean;
   planreachedome: boolean;
-  pehla: number;
+  count: number;
+  // count: 16;
   constructor(private navCtrl: NavController,private location: Location) { 
     this.planreached = true;
-    this.planreachedome = false
+    this.planreachedome = false;
+    this.count= 16;
     this.setPercentBar()
     this.firststausbar()
     this.secondstausbar()
@@ -27,7 +29,7 @@ export class GoalManagerPage implements OnInit {
   
   setPercentBar() {
     setTimeout(() => {
-      let apc = (16 / 100)
+      let apc = (this.count/100)
       console.log(apc);
       this.p_bar_value = apc;
     }, );
@@ -35,7 +37,7 @@ export class GoalManagerPage implements OnInit {
 
   firststausbar() {
     setTimeout(() => {
-      let apc = (99 / 100)
+      let apc = (100 / 100)
       console.log(apc);
       this.r_bar_value = apc;
     }, );
