@@ -11,6 +11,7 @@ import { Location } from '@angular/common';
 })
 export class GoalManagerCalculatePage implements OnInit {
 
+  lumsumAmountInvest: any;
   constructor(private navCtrl: NavController,private modalCtrl: ModalController,private location: Location) { }
 
   ngOnInit() {
@@ -25,5 +26,9 @@ export class GoalManagerCalculatePage implements OnInit {
   }
   backBtn(){
     this.location.back();
+  }
+
+  onLumsumAmout(event){
+    this.lumsumAmountInvest = event.detail.checked;
   }
 }

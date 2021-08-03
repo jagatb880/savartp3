@@ -1,58 +1,85 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>goal-manager-calculate</ion-title>
-  </ion-toolbar>
-</ion-header> -->
+<div style="--background: #FCFCFC;">
+  <div class="header-section">
+    <ion-row style="margin-top: -8px;">
+      <ion-col size="1.3" class="ion-no-padding">
+        <div class="back-button-img" (click)="backBtn()">
+          <img src="assets/icon/back-button-arrow.png">
+        </div>
+      </ion-col>
+      <ion-col size="8.7" style="text-align: center;">
+        <p class="signup">Goal Manager</p>
+      </ion-col>
+      <ion-col size="2" style="text-align: end;">
+        <p class="save">Skip</p>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>
+<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)">
+  <div style="margin-top: 60px;"></div>
+  <div style="margin: 25px">
+    <p class="select-country">Goal Name</p>
+    <ion-item class="investment-item" lines="none">
+      <ion-input class="investment-input" placeholder="Education Loan"></ion-input>
+    </ion-item>
+    <p class="select-country">Target Amount</p>
+    <ion-item class="investment-item" lines="none">
+      <ion-input class="investment-input" placeholder="Enter Amount"></ion-input>
+    </ion-item>
 
-<ion-content style="--background: #FCFCFC;">
-  <div style="margin: 25px;"> 
-   <ion-row style="padding-bottom: 30px;">
-     <ion-col size="1.3" class="ion-no-padding">
-       <div class="back-button-img" (click)="backBtn()">
-         <img src="assets/icon/back.png">
-       </div>
-     </ion-col>
-     <ion-col size="10.7" class="ion-no-padding">
-       <p class="signup">Goal Manager</p>
-     </ion-col>
-   </ion-row>
- 
-   <p class="select-country">Target Amount</p>
-   <ion-item class="investment-item" lines="none">
-     <ion-input class="investment-input" placeholder="Enter Amount"></ion-input>
-   </ion-item>
- 
-   <p class="select-country">Goal Duration</p>
-   <ion-item class="investment-item">
-     <img src="assets/icon/date.png" style="width: 23px;
+    <p class="select-country">Goal Duration</p>
+    <ion-item class="investment-item">
+      <img src="assets/icon/date.png" style="width: 23px;
            margin-bottom: 2vw;">
-     <ion-datetime class="date-time" displayFormat="MM/YYYY" pickerFormat="MMMM YYYY" monthValues="1,2,3,4,5,6,7,8,9,10,11,12" [yearValues]="customYearValues" placeholder="MM/YY"></ion-datetime>
-   </ion-item>
-   
-   <ion-row>
-     <ion-col size="9">
-       <p class="select-country">Monthly Investment Amount</p>
-     </ion-col>
-     <ion-col size="3" style="text-align: end;">
-       <img src="assets/icon/Group 25410.png" style="height: 15px;" (click)="openFilter()">
-     </ion-col>
-   </ion-row>
-   <ion-item class="investment-item" lines="none">
-     <ion-input class="investment-input" placeholder="Enter Amount"></ion-input>
-   </ion-item>
- 
-   <div style="text-align: end;">
-     <ion-button class="claculate">Calculate</ion-button>
-   </div>
+      <ion-datetime class="date-time" displayFormat="MM/YYYY" pickerFormat="MMMM YYYY"
+        monthValues="1,2,3,4,5,6,7,8,9,10,11,12" [yearValues]="customYearValues" placeholder="MM/YY"></ion-datetime>
+    </ion-item>
 
-   <div class="last-div-summary">
-     <p class="summary">Summary</p>
-     <p class="description">
-      The goal amount of <b>₹2,00,000</b> within a period of <b>27</b> months implies a return of <b>17%</b> (CAGR-Compounded Annual Growth Rate).
-     </p>
-     <p class="description">This is an aggressive goal and we suggest increasing the monthly investment amount to <b>₹5750.</b> Please edit the goal inputs.</p>
-   </div>
-   <ion-button expand="block" class="signupbutton1">Save</ion-button>
- </div> 
- </ion-content>
- 
+    <ion-row>
+      <ion-col size="9">
+        <p class="select-country">Monthly Investment Amount</p>
+      </ion-col>
+      <ion-col size="3" style="text-align: end;">
+        <img src="assets/icon/Group 25410.png" style="height: 15px;" (click)="openFilter()">
+      </ion-col>
+    </ion-row>
+    <ion-item class="investment-item" lines="none">
+      <ion-input class="investment-input" placeholder="Enter Amount"></ion-input>
+    </ion-item>
+
+    <ion-row style="margin-left: -3px;margin-top: 6vh;margin-bottom: 2vh;">
+      <ion-col size="1">
+        <ion-checkbox mode="md" [(ngModel)]="lumsumAmountInvest" [ngModelOptions]="{standalone: true}"
+          (ionChange)="onLumsumAmout($event)"></ion-checkbox>
+      </ion-col>
+      <ion-col size="11">
+        <p class="checkbox-text">I have lumsum amount to invest</p>
+      </ion-col>
+    </ion-row>
+
+    <div *ngIf="lumsumAmountInvest">
+      <p class="select-country">Add Amount</p>
+      <ion-item class="investment-item" lines="none">
+        <ion-input class="investment-input" placeholder="Enter Amount"></ion-input>
+      </ion-item>
+
+      <div style="text-align: end;">
+        <ion-button class="claculate">Calculate</ion-button>
+      </div>
+    </div>
+
+    <div *ngIf="!lumsumAmountInvest">
+      <div class="last-div-summary">
+        <p class="summary">Summary</p>
+        <p class="description">
+          The goal amount of <b>₹2,00,000</b> within a period of <b>27</b> months implies a return of <b>17%</b>
+          (CAGR-Compounded Annual Growth Rate).
+        </p>
+        <p class="description">This is an aggressive goal and we suggest increasing the monthly investment amount to
+          <b>₹5750.</b> Please edit the goal inputs.</p>
+      </div>
+      <ion-button expand="block" class="signupbutton1">Save & Continue</ion-button>
+    </div>
+
+  </div>
+</ion-content>

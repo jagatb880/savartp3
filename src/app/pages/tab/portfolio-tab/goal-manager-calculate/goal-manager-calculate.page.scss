@@ -1,22 +1,37 @@
 .back-button-img {
-    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
     width: 24px;
     height: 24px;
 }
 .signup{
     margin: 0;
+    letter-spacing: 0px;
     color: #101923;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
+    font-family: 'Roboto Medium';
+}
+.header-section {
+    padding: 16px 25px 0px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFFFFF;
+    height: 48px;
+    }
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
 }
 .select-country{
-    // padding-top: 32px;
-    font-size: 12px;
-    // margin-top: 5px !important;
+    font-size: 14px;
+    font-family: 'Roboto';
     margin: 0;
     letter-spacing: 0px;
     margin-bottom: 5px;
-    color: #8B94B4;
+    letter-spacing: 0px;
+    color: #797F91;
 } 
 .investment-item{--background: #FFFFFF;
     --border-style: none;
@@ -27,10 +42,12 @@
     margin-bottom: 16px;
 }  
 .investment-input{
-    font: normal normal normal 12px/7px Roboto;
-    letter-spacing: 0px;
-    color: #8B94B4;
+    font-size: 14px;
     margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #000000;
 }
 .date-time{
     font: normal normal normal 14px/19px Roboto;
@@ -53,7 +70,6 @@
 }
 .summary{
     margin: 0;
-    // font: normal normal medium 16px/12px Roboto;
     letter-spacing: 0px;
     color: #393939;
     font-size: 16px;
@@ -61,17 +77,18 @@
 }
 .description{
     letter-spacing: 0px;
-    font: normal normal normal 9px/16px Roboto;
+    font-family: 'Roboto';
+    font-size: 12px;
     color: #424B6A;
     margin: 0;
-    padding-top: 11px;
+    padding-top: 12px;
+    
 }
 .last-div-summary{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #67729429;
     border-radius: 4px;
     padding: 10px;
-    margin-top: 39px;
 }
 .signupbutton1 {
     text-transform: capitalize;
@@ -86,3 +103,11 @@
     --border-color: #B5BCD8;
     --background: #2835D5;
   }
+
+.checkbox-text {
+    margin-top: 1px;
+    letter-spacing: 0px;
+    color: #393939;
+    font-size: 14px;
+    text-align: start;
+}
