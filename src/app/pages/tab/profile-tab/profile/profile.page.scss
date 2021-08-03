@@ -47,3 +47,69 @@
 .arrowicon{
     color: grey;
 }
+.profile-status{
+    padding: 12px;
+    height: 148px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+}
+.my-profile-status{
+    font: normal normal normal 14px/25px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+}
+.view-btn{
+    background: #F7FBFF 0% 0% no-repeat padding-box;
+    border: 1px solid #293ACD;
+    border-radius: 13px;
+    opacity: 1;
+    width: 77px;
+    height: 25px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #2835D5;
+    opacity: 1;
+    // margin-top: 22px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .percentage{
+    padding-left: 4px;
+    font: normal normal bold 14px/25px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+  }
+  ion-icon{
+    padding: 1px;
+    border-radius: 28px;
+    border: 3px solid;
+    margin-top: -10px;
+}
+ion-progress-bar {
+    height: 5px;
+    --background: green;
+    --buffer-background: #DEDEDE;
+    --progress-background:#11BE74;
+  }
+.personal{
+    font: normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    margin: 0;
+}
+#personal0ne{
+    padding-left: 8px;
+}
+#Investment{
+    padding-left: 18px;
+}
+#Goal{
+    padding-left: 35px;
+}
+#Request{
+    padding-left: 39px;
+}

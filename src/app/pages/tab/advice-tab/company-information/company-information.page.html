@@ -1,5 +1,5 @@
 <ion-content style="--background: #FCFCFC;">
-  <div style="margin: 25px;">
+  <!-- <div style="margin: 25px;">
     <ion-row>
       <ion-col size="1.3" class="ion-no-padding">
         <div class="back-button-img" (click)="backBtn()">
@@ -9,12 +9,38 @@
       <ion-col size="10.7" class="ion-no-padding">
         <p class="signup">SYNC Details</p>
       </ion-col>
-    </ion-row>
-    <div class="image-text">
-      <img src="assets/svg/india.svg">
-      <p class="investment-name">Invesment Name</p>
-      <p class="sync-bank">SYNC Bank</p>
+    </ion-row> -->
+
+    <div class="header-section">
+      <ion-row style="margin-top: -8px;">
+        <ion-col size="1.3" class="ion-no-padding">
+          <div class="back-button-img" (click)="backBtn()">
+            <img src="assets/icon/back.png">
+          </div>
+        </ion-col>
+        <ion-col size="8.7" style="text-align: center;">
+          <p class="signup">SYNC Details</p>
+        </ion-col>
+        <ion-col size="2" style="text-align: end;">
+        </ion-col>
+      </ion-row>
     </div>
+
+    <div style="margin: 70px 25px 25px 25px;">
+    <div class="image-text">
+        <ion-row>
+          <ion-col>
+            <!-- <div class="image-text"> -->
+              <img src="assets/svg/india.svg">
+              <p class="investment-name">Invesment Name</p>
+              <p class="sync-bank">SYNC Bank</p>
+            <!-- </div> -->
+          </ion-col>
+          <ion-col>
+            <ion-button expand="block" class="Invest">Invest</ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
     <ion-row class="all-row">
       <ion-col size="6" style="margin-left: -4px;">
         <p class="type">Type</p>
@@ -36,10 +62,11 @@
         <p class="stock">INE237A34528</p>
       </ion-col>
     </ion-row>
-    <div style="padding-top: 10px;">
+    <!-- <div style="padding-top: 10px;">
       <p class="type">Exchange</p>
       <p class="stock">NSE & BSE</p>
-    </div>
-    <ion-button expand="block" class="signupbutton1" fill="outline" [routerLink]='["/signup"]'>View Research Note</ion-button>
-  </div>  
+    </div> -->
+    <ion-button expand="block" class="signupbutton1" fill="outline" [routerLink]='["/signup"]'>View Advice Summary</ion-button>
+  <!-- </div>   -->
+</div>
 </ion-content>

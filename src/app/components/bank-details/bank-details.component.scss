@@ -5,7 +5,7 @@ ion-content{
     height: 4px;
     background: #ACACAC;
     border-radius: 10px;
-    margin-top: 20px;
+    // margin-top: 20px;
     width: 42px;
 }
 .bankname{
@@ -30,4 +30,66 @@ ion-content{
 .all{
     background: white;
     border-radius: 30px 30px 0px 0px;
+    padding: 23px 23px 0px 23px;
+}
+.avanti-feed{
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    font-size: 17px;
+    line-height: 23px;
+    font-family: 'Roboto Medium';
+}
+.percentage{
+    font: normal normal normal 16px/24px Roboto;
+    letter-spacing: 0.16px;
+    color: #11BE74;
+    margin: 0;
+}
+.total-price{
+    font: normal normal bold 18px/17px Roboto;
+    letter-spacing: 0px;
+    color: #1C162E;
+    margin: 0;
+}
+.flag{
+    height: 14px;
+}
+.row1{
+    padding-top: 19px;
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 10px;
+}
+.average-price{
+    font: normal normal normal 18px/14px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    margin: 0;
+}
+.average-cost{
+    font: normal normal normal 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+}
+.col{
+    padding: 0;
+}
+.note{
+    font: normal normal normal 12px/14px Roboto;
+    letter-spacing: 0px;
+    color: #979797;
+    margin: 0;
+    padding-top: 40px;
+}
+.sell{
+    // font: normal normal medium 18px/38px Roboto;
+    font-family: 'Roboto Medium';
+    --background: #2835D5;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+    --border-radius: 11px;
+    height: 45px;
+    margin-top: 15px;
 }
