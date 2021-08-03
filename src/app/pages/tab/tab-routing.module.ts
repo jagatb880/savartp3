@@ -116,6 +116,10 @@ const routes: Routes = [
     path: 'advice',
     loadChildren: () => import('./advice-tab/advice/advice.module').then( m => m.AdvicePageModule)
   },
+  {
+    path: 'investment-review',
+    loadChildren: () => import('./advice-tab/investment-review/investment-review.module').then( m => m.InvestmentReviewPageModule)
+  },
   // {
   //   path: 'profile',
   //   loadChildren: () => import('./profile-tab/profile/profile.module').then( m => m.ProfilePageModule)

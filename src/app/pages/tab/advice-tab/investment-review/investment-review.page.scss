@@ -1,0 +1,73 @@
+.header-section {
+    padding: 16px 25px 0px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFFFFF;
+    height: 48px;
+    }
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
+}
+.signup{
+    margin: 0;
+    letter-spacing: 0px;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Roboto Medium';
+}
+.back-button-img {
+    // background: transparent url(././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+.recommendation{
+    letter-spacing: 0px;
+    color: #393939;
+    font-size: 16px;
+    line-height: 12px;
+    font-family: 'Roboto Medium';
+}
+.recomendation-div{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+}
+.bat-inc{
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    font-size: 17px;
+    line-height: 23px;
+    font-family: 'Roboto Medium';
+}
+.mutual-fund{
+    font: normal normal normal 12px/12px Roboto;
+    letter-spacing: -0.28px;
+    color: #8B94B4;
+    margin: 0;
+}
+.advice{
+    font: normal normal normal 12px/12px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+}
+.buy{
+    padding-left: 5px;
+    letter-spacing: 0px;
+    color: #11BE74;
+    font-size: 14px;
+    line-height: 11px;
+    font-family: 'Roboto Medium';
+}
+.action{
+    font: normal normal normal 16px/22px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    // margin: 0;
+}

@@ -62,6 +62,25 @@
       <img src="assets/icon/Group25667.svg" width="34">
     </div>
     <span class="heading-bold">Business Description</span>
+    <ion-row style="margin-top: 18px;" *ngFor="let deta of bussinessdescription">
+      <ion-col size="0.7">
+        <ion-icon name="ellipse"></ion-icon>
+      </ion-col>
+      <ion-col size="11.3">
+        <p class="text">{{deta.text}}</p>
+      </ion-col>
+    </ion-row>
+
+    <p class="heading-bold">Business Description</p>
+    <p class="makes-invest">What makes _________ a compelling investment?</p>
+    <ion-row style="margin-top: 18px;" *ngFor="let deta of bussinessdescription">
+      <ion-col size="0.7">
+        <ion-icon name="ellipse"></ion-icon>
+      </ion-col>
+      <ion-col size="11.3">
+        <p class="text">{{deta.text}}</p>
+      </ion-col>
+    </ion-row>
   </div>
   <div class="table-head">
     <span class="heading-bold">Avanti Feeds Ltd. v/s Industry- [INR-Crore]</span>
@@ -71,7 +90,7 @@
     <ion-col class="row-heading" size="2.5">AF</ion-col>
     <ion-col class="row-heading" size="3">Industry</ion-col>
   </ion-row>
-  <ion-row *ngFor="let data of rowDatas;" style="border-bottom: 1px solid #e0dddd;">
+  <ion-row *ngFor="let data of rowDatas;" style="border-bottom: 1px solid #e0dddd;height: 56px;">
     <ion-col class="row-data-padding" size="6.5">{{ data.desc }}</ion-col>
     <ion-col class="row-data" size="2.5">{{ data.af }}</ion-col>
     <ion-col class="row-data" size="3">{{ data.industry }}</ion-col>

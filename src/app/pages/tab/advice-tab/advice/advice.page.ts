@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class AdvicePage implements OnInit {
 
   rowDatas: any;
+  bussinessdescription: { text: string; }[];
   constructor() { }
 
   ngOnInit() {
+    this.bussinessdescription = [{'text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'},
+    {'text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'},
+    {'text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'}]
     this.rowDatas = [
       {
           "desc": "Margin Ratios",

@@ -1,0 +1,45 @@
+<div class="header-section">
+  <ion-row style="margin-top: -8px;">
+    <ion-col size="1.3" class="ion-no-padding">
+      <div class="back-button-img" (click)="backBtn()">
+        <img src="assets/icon/back-button-arrow.png">
+       
+      </div>
+    </ion-col>
+    <ion-col size="3">
+      <img src="assets/icon/logo.png" style="margin-top: 6px;
+      height: 16px;">
+    </ion-col>
+    <ion-col size="5.7" style="text-align: center;">
+      <p class="signup">Review</p>
+    </ion-col>
+    <ion-col size="2" style="text-align: end;">
+      <img src="assets/icon/iicon.png" style="height: 24px;">
+    </ion-col>
+  </ion-row>
+</div>
+<ion-content style="--background: #FCFCFC;">
+  <app-guideline-header heading="Please read the Investment Review guidelines" (onButtonTap)="goToAnnoucement()">
+  </app-guideline-header>
+
+  <div style="margin: 0px 25px 25px 25px;">
+    <p class="recommendation">Recommendations</p>
+
+    <div class="recomendation-div">
+      <ion-row style="padding: 7px;">
+        <ion-col size="6">
+          <p class="bat-inc">BAT INC</p>
+          <p class="mutual-fund">Mutual Fund</p>
+        </ion-col>
+        <ion-col size="5" style="text-align: end;">
+          <p class="advice">Advice<span class="buy">BUY</span></p>
+        </ion-col>
+        <ion-col size="1" >
+          <ion-icon name="chevron-down-outline" (click)="down()" *ngIf="downtext == false"></ion-icon>
+          <ion-icon name="chevron-up-outline" (click)="up()" *ngIf="downtext == true"></ion-icon>
+        </ion-col>
+        <p class="action" *ngIf="downtext == true">Action: Please act in a step-wise manner with 25% exit for every 10% fall in price.</p>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
