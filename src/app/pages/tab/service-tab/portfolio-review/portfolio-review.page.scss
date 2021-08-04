@@ -1,15 +1,28 @@
 .back-button-img {
-    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
     width: 24px;
     height: 24px;
 }
-
-.signup {
+.signup{
     margin: 0;
     letter-spacing: 0px;
     color: #101923;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
+    font-family: 'Roboto Medium';
+}
+.header-section {
+    padding: 16px 25px 0px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFFFFF;
+    height: 48px;
+    }
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
 }
 
 .first-text {
@@ -131,11 +144,35 @@ ion-textarea {
     color: #FFFFFF;
     --border-radius: 12px;
     height: 54px;
-    // margin: 31px 0px 0px 0px;
+    margin-top: 20px;
     letter-spacing: 0px;
 }
 
 ion-input {
     color: black;
     margin-bottom: 9px;
+}
+
+.addmorebutton{
+    margin-top: 2vh;
+    height: 40px;
+    --border-radius: 26px;
+    /* font: normal normal normal 14px/11px Roboto; */
+    letter-spacing: 0px;
+    color: #2835D5;
+}
+.addimage{
+    width: 14%;
+}
+.button-ptag{
+    letter-spacing: 0px;
+    color: #2835D5;
+    font-size: 14px;
+    margin-left: 8px;
+    text-transform: capitalize;
+}
+
+ion-button{
+    --padding-start: 0px;
+    --padding-end: 0px;
 }
