@@ -9,7 +9,7 @@ import { Location } from '@angular/common';
 })
 export class GoalManagerPage implements OnInit {
   p_bar_value: any;
-  datas: { targetamount: string; 'monthly_investmet_amount': string; 'goal_duartion': string; 'started_date': string; 'ended_date': string; progresscount: string; }[];
+  datas: { targetamount: string; 'monthly_investmet_amount': string; 'goal_duartion': string; 'started_date': string; 'ended_date': string; progresscount: number; }[];
   count: any;
   
   constructor(private location: Location){
@@ -17,22 +17,19 @@ export class GoalManagerPage implements OnInit {
     
     
     this.datas = [{'targetamount':'10,000','monthly_investmet_amount':'10,000',
-    'goal_duartion':'June 2021 - June 2024','started_date':'21 Feb 2020','ended_date':'16 Aug 2021','progresscount':'16'},
+    'goal_duartion':'June 2021 - June 2024','started_date':'21 Feb 2020','ended_date':'16 Aug 2021','progresscount':16},
     {'targetamount':'10,000','monthly_investmet_amount':'10,000',
-    'goal_duartion':'June 2021 - June 2024','started_date':'21 Feb 2020','ended_date':'16 Aug 2021','progresscount':'90'},
+    'goal_duartion':'June 2021 - June 2024','started_date':'21 Feb 2020','ended_date':'16 Aug 2021','progresscount':90},
     {'targetamount':'10,000','monthly_investmet_amount':'10,000',
-    'goal_duartion':'June 2021 - June 2024','started_date':'21 Feb 2020','ended_date':'16 Aug 2021','progresscount':'70'}]
+    'goal_duartion':'June 2021 - June 2024','started_date':'21 Feb 2020','ended_date':'16 Aug 2021','progresscount':70}]
     for(let i = 0;i<this.datas.length;i++){
-      if(this.datas[i]){
         this.count = this.datas[i].progresscount;
         console.log(this.count);
-        setTimeout(() => {
+        // setTimeout(() => {
           let apc = (this.count/100)
           console.log(apc);
-          this.p_bar_value = apc;
-        }, );
-        // this.setPercentBar(this.count);
-      }
+          this.datas[i].progresscount = apc;
+        // }, 30*this.count);
     }
   }
 
