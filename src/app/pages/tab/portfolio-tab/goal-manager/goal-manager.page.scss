@@ -1,0 +1,93 @@
+.back-button-img {
+    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+.signup{
+    margin: 0;
+    letter-spacing: 0px;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Roboto Medium';
+}
+.header-section {
+    padding: 16px 25px 0px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFFFFF;
+    height: 48px;
+    }
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
+}
+.goal-name-div{
+    height: 320px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+    padding: 9px;
+    margin-top: 16px;
+}
+.goal-name{
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Roboto Medium';
+}
+.threedot-image{
+    height: 24px;
+}
+.target-amount{
+    font: normal normal normal 14px/22px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+    padding-top: 15px;
+}
+.target-amount-price{
+    letter-spacing: 0px;
+    color: #424B6A;
+    margin: 0;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Roboto Medium';
+}
+.progressbar-percentage{
+    letter-spacing: 0px;
+    color: #159387;
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Roboto Medium';
+    padding-top: 19px;
+}
+.started-date{
+    font: normal normal normal 14px/14px Roboto;
+    letter-spacing: 0px;
+    color: #979797;
+    margin: 0;
+}
+ion-progress-bar {
+    height: 4px;
+    /* --background: #159387; */
+    --buffer-background: #DADFEE;
+    --progress-background: #159387;
+  }
+.chip-box-selected{
+    border-color: #2835D5;
+}
+ion-label{
+    font: normal normal normal 12px/11px Roboto;
+    letter-spacing: 0px;
+    color: #2835D5;
+}  
+.add-icon{
+    color: #2835D5;
+}
