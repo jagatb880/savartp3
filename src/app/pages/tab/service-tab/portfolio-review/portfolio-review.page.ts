@@ -17,6 +17,8 @@ export class PortfolioReviewPage implements OnInit {
   portfolioReviewForm: FormGroup;
   daysOfMonth: number[];
   currentDate: any;
+  portfolioReviews: any[]
+  portfolioReviewCounts: number;
   constructor(private location: Location, private fb: FormBuilder, private commonSvc: CommonService,
     private networkSvc: NetworkService, private modalCtrl: ModalController, private datePipe: DatePipe ) { 
     this.createPortfolioReviewForm();
@@ -35,8 +37,12 @@ export class PortfolioReviewPage implements OnInit {
    }
 
   ngOnInit() {
+    this.portfolioReviewCounts = 14;
+    this.portfolioReviews = [];
     this.daysOfMonth = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
     this.currentDate = this.datePipe.transform(new Date(),"YYYY-MM-dd");
+    this.portfolioReviews.push(this.portfolioReviewForm)
+    this.portfolioReviewCounts--;
   }
 
   numberOnlyValidation(event){
@@ -45,6 +51,13 @@ export class PortfolioReviewPage implements OnInit {
 
   backBtn(){
     this.location.back();
+  }
+
+  addMore(){
+    if(this.portfolioReviewCounts != 0){
+      this.portfolioReviews.push(this.portfolioReviewForm)
+      this.portfolioReviewCounts--;
+    }
   }
 
   save(){
