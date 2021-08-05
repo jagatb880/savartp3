@@ -12,6 +12,7 @@ export class ProfilePage implements OnInit {
   planreached : boolean;
   planreachedome: boolean;
   count: number;
+  deta: string;
   constructor() {
     this.planreached = true;
     this.planreachedome = false;
@@ -19,6 +20,20 @@ export class ProfilePage implements OnInit {
     this.setPercentBar()
     this.firststausbar()
     this.secondstausbar()
+    var reverse = function(str) {
+      var arr = [];
+      
+      for (var i = 0, len = str.length; i <= len; i++) {
+          arr.push(str.charAt(len - i))
+      }
+  
+      return arr.join('');
+  }
+  
+  console.log(reverse('mohini'));
+
+  var name = "Mary";
+  console.log(name.replace("Mary", "Army"));
    }
 
   ngOnInit() {

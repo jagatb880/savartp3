@@ -168,6 +168,10 @@ const routes: Routes = [
     path: 'about-savart-text',
     loadChildren: () => import('./pages/about-savart-text/about-savart-text.module').then( m => m.AboutSavartTextPageModule)
   },
+  {
+    path: 'active-subscription',
+    loadChildren: () => import('./pages/active-subscription/active-subscription.module').then( m => m.ActiveSubscriptionPageModule)
+  },
  
 ];
 

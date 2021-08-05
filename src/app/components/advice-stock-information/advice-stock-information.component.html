@@ -1,0 +1,41 @@
+<ion-content></ion-content>
+<div class="all">
+<div style="text-align: -webkit-center;" (click)="closemodal()">
+  <div class="line"></div>
+</div>
+<div style="margin: 12px 11px 11px 11px;">
+  <ion-row style="padding-top: 15px;">
+    <ion-col size="10" class="ion-no-padding">
+      <p class="request-summary">Update Stock Information</p>
+    </ion-col>
+    <ion-col size="2" class="ion-no-padding" >
+      <img src="assets/icon/modal-cross.png" style="height: 28px;" (click)="closemodal()"> 
+    </ion-col>
+  </ion-row>
+
+  <ion-row style="padding-top: 18px;padding-bottom: 13px;">
+    <ion-col size="6">
+      <p class="sync">SYNC</p>
+      <p class="price">₹ 2,000</p>
+    </ion-col>
+    <ion-col size="6" style="text-align: end;">
+      <p class="advice">Advice<span class="buy">BUY</span></p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6" >
+      <p class="purchase-amount">Purchase Amount</p>
+      <ion-item class="item" line="none">
+        <ion-input placeholder="Enter"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6" >
+      <p class="purchase-amount">Quantity</p>
+      <ion-item class="item" line="none">
+        <ion-input placeholder="Enter"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-button  expand="block" class="save" (click)="sendOtp()">Save</ion-button>
+</div>
+</div>

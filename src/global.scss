@@ -129,3 +129,11 @@ ion-checkbox {
 .filter-modal-class{
     padding-bottom: 60% !important;
 }
+.advice-stock-modal-class{
+    background: rgba(0, 0, 0, 0.5) !important;
+    --backdrop-opacity: var(--ion-backdrop-opacity, 0.32);
+    .modal-wrapper{
+        // border-radius: 20px;
+        --background: transparent;
+      }
+}

@@ -23,16 +23,18 @@ import { DematAccountComponent } from './components/demat-account/demat-account.
 import { NgCalendarModule  } from 'ionic2-calendar';
 import { BankDetailsComponent } from './components/bank-details/bank-details.component';
 import { InvestmentLinkComponent } from './components/investment-link/investment-link.component';
+import { AdviceStockInformationComponent } from './components/advice-stock-information/advice-stock-information.component';
+
 import { Base64ToGallery } from '@ionic-native/base64-to-gallery/ngx';
 
 
 @NgModule({
   declarations: [AppComponent, FilterAdviceComponent, FilterInvestmentAdviceComponent, InvestmentRequestSummaryComponent, 
     PortfolioRequestSummaryComponent, GoalManagermodalComponent, ResearchRequestSummaryComponent,InvestmentLinkComponent, 
-    PortfolioReviewSummaryComponent,DematAccountComponent,BankDetailsComponent],
+    PortfolioReviewSummaryComponent,DematAccountComponent,BankDetailsComponent,AdviceStockInformationComponent],
   entryComponents: [FilterAdviceComponent, FilterInvestmentAdviceComponent, InvestmentRequestSummaryComponent,InvestmentLinkComponent, 
     PortfolioRequestSummaryComponent, GoalManagermodalComponent, ResearchRequestSummaryComponent, 
-    PortfolioReviewSummaryComponent,DematAccountComponent,BankDetailsComponent],
+    PortfolioReviewSummaryComponent,DematAccountComponent,BankDetailsComponent,AdviceStockInformationComponent],
   imports: [BrowserModule, IonicModule.forRoot(),
     IonicStorageModule.forRoot({
       name: '__myCrewMobile',

@@ -1,0 +1,118 @@
+.img{
+    background: url('./././../../../assets/icon/active-subscription.png')no-repeat  ;
+    height: 185px;--width: 100% !important;--webkit-background-size: cover;
+    --moz-background-size: cover;
+    content: ' ';
+    display: block;
+    background-size: cover;
+}
+.back-button-img {
+    // background: transparent url(./././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+
+.signup {
+    margin: 0;
+    font: normal normal normal 14px/25px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-family: 'Roboto Medium';
+}
+.ion-no-padding{
+    display: flex;
+    align-items: center;
+}
+.price-for-refer{
+    font: normal normal normal 21px/38px Roboto;
+    letter-spacing: 0px;
+    color: #FCFCFC;
+}
+.all-div{
+    padding: 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DBDFED;
+    border-radius: 10px;
+    height: 150px;
+    margin-top: 43px;
+}
+.savartx{
+    padding-bottom: 36px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    font-size: 20px;
+    line-height: 21px;
+    font-family: 'Roboto Medium';
+}
+.started-date{
+    font: normal normal normal 14px/14px Roboto;
+    letter-spacing: 0px;
+    color: #979797;
+    margin: 0;
+}
+ion-progress-bar {
+    height: 4px;
+    /* --background: #159387; */
+    --buffer-background: #DADFEE;
+    --progress-background: #159387;
+  }
+.request-div{
+    margin-top: 15px;
+    padding: 15px;
+    height: 83px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E1E7FA;
+    border-radius: 10px;
+}  
+.count{
+    font: normal normal bold 20px/13px Roboto;
+    letter-spacing: 0px;
+    color: #1C162E;
+    margin: 0;
+}
+.left{
+    padding-left: 8px;
+    font: normal normal normal 13px/18px Roboto;
+    letter-spacing: 0px;
+    color: #080E14;
+    margin: 0;
+}
+.investment-request{
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+}
+.request-adivice-button{
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: 0px;
+    color: #2835D5;
+    border: 1px solid #293ACD;
+    border-radius: 4px;
+    height: 28px;
+    --border-width: 0px;
+    --background-focused: none;
+    --border-color: #5986f0;
+    background: white;
+    text-transform: capitalize;
+    // border: 1px solid #B5BCD8;
+    font-family: 'Roboto';
+}
+.avail{
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #8B94B4;
+    margin: 0;
+    padding-top: 15px;
+}
+.payment-history{
+    letter-spacing: 0px;
+    color: #393939;
+    margin: 0;
+    font-size: 16px;
+    line-height: 12px;
+    font-family: 'Roboto Medium';
+    padding-top: 30px;
+}
