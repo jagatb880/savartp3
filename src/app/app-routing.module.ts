@@ -172,6 +172,14 @@ const routes: Routes = [
     path: 'active-subscription',
     loadChildren: () => import('./pages/active-subscription/active-subscription.module').then( m => m.ActiveSubscriptionPageModule)
   },
+  {
+    path: 'upstox-api',
+    loadChildren: () => import('./pages/upstox-api/upstox-api.module').then( m => m.UpstoxApiPageModule)
+  },
+  {
+    path: 'upstox-loading',
+    loadChildren: () => import('./pages/upstox-loading/upstox-loading.module').then( m => m.UpstoxLoadingPageModule)
+  },
  
 ];
 
