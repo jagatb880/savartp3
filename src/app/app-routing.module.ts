@@ -180,6 +180,14 @@ const routes: Routes = [
     path: 'upstox-loading',
     loadChildren: () => import('./pages/upstox-loading/upstox-loading.module').then( m => m.UpstoxLoadingPageModule)
   },
+  {
+    path: 'brokerage-account',
+    loadChildren: () => import('./pages/brokerage-account/brokerage-account.module').then( m => m.BrokerageAccountPageModule)
+  },
+  {
+    path: 'brokerage-account-list',
+    loadChildren: () => import('./pages/brokerage-account-list/brokerage-account-list.module').then( m => m.BrokerageAccountListPageModule)
+  },
  
 ];
 

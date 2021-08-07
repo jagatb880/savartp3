@@ -1,0 +1,74 @@
+.back-button-img {
+    background: transparent url(././../../../assets/icon/back-button-arrow.png);
+    width: 24px;
+    height: 24px;
+}
+
+.header-section {
+    padding: 16px 25px 0px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFFFFF;
+    height: 48px;
+    }
+.ion-no-padding{
+    align-items: center;
+    display: flex;
+    text-align: start;
+}
+.signup{
+    margin: 0;
+    letter-spacing: 0px;
+    color: #101923;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Roboto Medium';
+}
+.image{
+    height: 35px;
+}
+.upstox{
+    padding-left: 6px;
+    font: normal normal normal 16px/12px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    margin: 0;
+}
+.rw1{
+    margin: 11px 0 17px 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #67729429;
+    border-radius: 4px;
+    height: 60px;
+}
+.link{
+    letter-spacing: 0.16px;
+    color: #2835D5;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Roboto';
+}
+.signupbutton {
+    --background: #2835D5;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+    --border-radius: 11px;
+    height: 54px;
+    margin: 10px 0px 22px 0px;
+    letter-spacing: 0px;
+    font-family: "Roboto Medium";
+    line-height: 38px;
+}
+.dont-demat{
+    font: normal normal normal 18px/14px Roboto;
+    letter-spacing: 0px;
+    color: #08054E;
+    margin: 0;
+    text-align: center;
+    padding-top: 51px;
+}
