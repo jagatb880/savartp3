@@ -3,14 +3,14 @@
     <ion-buttons slot="start" style="margin-left: 7px;">
       <ion-menu-button style="color:black"></ion-menu-button>
     </ion-buttons>
-   <ion-row>
-       <ion-col size="6" style="display: flex;
+    <ion-row>
+      <ion-col size="6" style="display: flex;
        padding: 0;">
-          <img src="assets/icon/logo.png" class="logo">
-       </ion-col>
-       <ion-col style="text-align: end;" size="6">
-       </ion-col>
-   </ion-row>
+        <img src="assets/icon/logo.png" class="logo">
+      </ion-col>
+      <ion-col style="text-align: end;" size="6">
+      </ion-col>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
@@ -20,11 +20,9 @@
     <p class="fullname">Monica Rao</p>
     <p class="dab">dab252</p>
   </div>
-
-  <div style="margin: 25px;">
-    <div>
+  <div>
     <div class="profile-status">
-      <ion-row>
+      <ion-row style="margin-left: 12px;margin-right: 12px;margin-top: 12px;">
         <ion-col size="8.5" style="display: flex;">
           <p class="my-profile-status">My Profile Status</p>
           <p class="percentage">25%</p>
@@ -36,25 +34,29 @@
         </ion-col>
       </ion-row>
 
-      <div style="display: flex;margin-top: 30px;padding-left: 22px;
-      padding-right: 22px;">
+      <div style="display: flex;margin-top: 30px;padding-left: 27px;
+      padding-right: 28px;">
         <div>
-          <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreached ? '#11BE74 ' :'white'}" class="right-icon"></ion-icon>
+          <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreached ? '#11BE74 ' :'white'}"
+            class="right-icon"></ion-icon>
         </div>
-        
-        <ion-progress-bar [value]="r_bar_value" ></ion-progress-bar>
+
+        <ion-progress-bar [value]="r_bar_value"></ion-progress-bar>
         <!-- <p class="personal" ><br>Personal</p> -->
         <div>
-          <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreachedome ? '#11BE74' :'#B3BCDB'}" class="right-icon"></ion-icon>
+          <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreachedome ? '#11BE74' :'#B3BCDB'}"
+            class="right-icon"></ion-icon>
         </div>
-        
-        <ion-progress-bar [value]="k_bar_value" ></ion-progress-bar>
+
+        <ion-progress-bar [value]="k_bar_value"></ion-progress-bar>
         <div>
-          <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreachedome ? '#11BE74' :'#B3BCDB'}" class="right-icon"></ion-icon>
+          <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreachedome ? '#11BE74' :'#B3BCDB'}"
+            class="right-icon"></ion-icon>
         </div>
-        <ion-progress-bar [value]="k_bar_value" ></ion-progress-bar>
+        <ion-progress-bar [value]="k_bar_value"></ion-progress-bar>
         <div>
-          <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreachedome ? '#11BE74' :'#B3BCDB'}" class="right-icon"></ion-icon>
+          <ion-icon name="checkmark-outline" [ngStyle]="{'border-color': planreachedome ? '#11BE74' :'#B3BCDB'}"
+            class="right-icon"></ion-icon>
         </div>
         <!-- <br>
         <p class="personal" >Personal</p>
@@ -64,26 +66,22 @@
       </div>
       <ion-row>
         <ion-col size="" style="text-align: center;">
-          <p class="personal" >Personal</p>
+          <p class="personal">Personal</p>
         </ion-col>
         <ion-col size="" style="text-align: center;">
-          <p class="personal" >Investment</p>
+          <p class="personal">Investment</p>
         </ion-col>
         <ion-col size="" style="text-align: center;">
-          <p class="personal" >Goal</p>
+          <p class="personal">Goal</p>
         </ion-col>
         <ion-col size="" style="text-align: center;">
-          <p class="personal" >Request</p>
+          <p class="personal">Request</p>
         </ion-col>
 
       </ion-row>
-        
-        <!-- <p class="personal" id="Investment">Investment</p>
-        <p class="personal" id="Goal">Goal</p>
-        <p class="personal" id="Request">Request</p> -->
-     
     </div>
   </div>
+  <div style="margin: 25px;">
     <ion-row class="row" [routerLink]="[ '/personal-profile']">
       <ion-col size="10">
         <p class="personal-profile">Personal Profile</p>
