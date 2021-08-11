@@ -32,6 +32,7 @@
     margin: 0;
 }
 .items{
+    margin-top: 27px;
     font: normal normal normal 14px/12px Roboto;
     letter-spacing: 0px;
     color: #424B6A;
@@ -94,3 +95,27 @@ ion-col{
     font-family: "Roboto Medium";
     line-height: 38px;
 }
+.investment-request{
+    letter-spacing: -0.2px;
+    color: #000000;
+    margin: 0;
+}
+ion-icon{
+    padding: 0px;
+    border-radius: 28px;
+    border: 3px solid;
+    margin-top: -10px;
+}
+ion-progress-bar {
+    margin-top: 2px;
+    height: 3px;
+    --background: green;
+    --buffer-background: #DEDEDE;
+    --progress-background:#11BE74;
+  }
+  .personal{
+    font: normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #393939;
+    margin: 0;
+}  

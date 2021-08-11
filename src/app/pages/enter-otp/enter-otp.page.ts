@@ -154,7 +154,7 @@ export class EnterOtpPage implements OnInit {
         console.log(response);
         switch (response.statusCode) {
           case 0:
-            this.commonSvc.showMessage(response.data.message)
+            // this.commonSvc.showMessage(response.data)
             this.commonSvc.setTokenToStorage("authtoken",response.data).then(val=>{
               this.commonSvc.authToken = val.token
             })

@@ -99,14 +99,15 @@ export class SignupPage implements OnInit {
         this.commonSvc.showLoader("Please wait...")
         let data= {
           "custregmobile":this.loginForm.value.custregmobile,
-          "custcountrycode":"91"
+          "custcountrycode":Math.abs(this.loginForm.value.custcountrycode).toString()
         }
+        console.log(data)
         this.onboardingSvc.sendOtpForRegisteration(data).subscribe(response=>{
           console.log(response)
           this.commonSvc.dismissLoader();
           switch (response.statusCode) {
           case 0:
-            this.commonSvc.showMessage(response.message)
+            // this.commonSvc.showMessage(response.message)
             this.navCtrl.navigateForward(['enter-otp'],{state: data})
             break;
           case 1:

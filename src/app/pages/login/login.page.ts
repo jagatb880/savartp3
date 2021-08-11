@@ -49,7 +49,7 @@ export class LoginPage implements OnInit {
   createLoginForm() {
     this.loginForm = this.fb.group({
       custregmobile: ["", Validators.compose([Validators.required, Validators.minLength(7)])],
-      custcountrycode: ["+91", Validators.required],
+      custcountrycode: ["+91", Validators.required,],
       searchText: [""],
       password: ["",Validators.required],
     });
@@ -88,7 +88,7 @@ export class LoginPage implements OnInit {
         this.passwordErrorStatus = false
     }else if(data.custregmobile.length == 10){
       this.errorStatus = false;
-      if(data.password.length != 0){
+      if(data.password.length == '/[\@\#\$\%\^\&\*\(\)\_\+\!]/ && /[a-z]/ && /[0-9]/ && /[A-Z]/'){
         this.passwordErrorMsg = ''
         this.passwordErrorStatus = false
       }else{
@@ -164,6 +164,7 @@ export class LoginPage implements OnInit {
 
 
   login(){
+    console.log(this.networkSvc.online);
     if(this.networkSvc.online){
       if(this.selectedSegment == 'mobilenumber'){
         this.checkMobileNumberSegment();
