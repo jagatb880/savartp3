@@ -1,12 +1,32 @@
 <ion-content>
-<div class="background">
-  <img src="assets/icon/onbordinglogo.png">
-  <div style="height: 90%;
-  display: flex;
-  align-items: flex-end;">
-  <p class="firsttext">Investment advice<br> that makes dreams<br> come true</p>
-</div>
-</div>
-<ion-button expand="full" fill="outline" class="fstbuttn" [routerLink]='["/login"]'>Login</ion-button>
-<ion-button expand="block" class="signupbutton" (click)="signup()">Sign&nbsp;<p style="text-transform: lowercase;">up</p></ion-button>
+  <!-- <div class="background">
+    <img src="assets/icon/onbordinglogo.png">
+    <div style="height: 90%;
+    display: flex;
+    align-items: flex-end;">
+    <p class="firsttext">Investment advice<br> that makes dreams<br> come true</p>
+  </div>
+  </div>
+  <ion-button expand="full" fill="outline" class="fstbuttn" [routerLink]='["/login"]'>Login</ion-button>
+  <ion-button expand="block" class="signupbutton" (click)="signup()">Sign&nbsp;<p style="text-transform: lowercase;">up</p></ion-button> -->
+  <div class="all-div">
+    <img src="assets/icon/logo-onboaring.png" class="img">
+    <!-- <img src="assets/icon/onboarding-one.png"> -->
+    <ion-slides [options]="slideOptsOne" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+      <ion-slide *ngFor="let s of sliderOne.slidesItems">
+          <img src="{{s.img}}" style="width: 100%;
+          margin-top: 13px;">
+       </ion-slide>
+   </ion-slides>
+   <p class="investment-advice">Investment advice <br>that makes dreams <br>come true</p>
+
+   <ion-row style="padding: 0 10px 15px 10px;">
+     <ion-col size="6">
+         <ion-button expand="block" class="loginbutton" (click)="signup()">Login</ion-button>
+     </ion-col>
+     <ion-col size="6">
+        <ion-button expand="block" class="signupbutton" (click)="signup()">Sign&nbsp;<p style="text-transform: lowercase;">up</p></ion-button>
+     </ion-col>
+   </ion-row>
+  </div>
 </ion-content>

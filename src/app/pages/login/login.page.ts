@@ -88,7 +88,7 @@ export class LoginPage implements OnInit {
         this.passwordErrorStatus = false
     }else if(data.custregmobile.length == 10){
       this.errorStatus = false;
-      if(data.password.length == '/[\@\#\$\%\^\&\*\(\)\_\+\!]/ && /[a-z]/ && /[0-9]/ && /[A-Z]/'){
+      if(data.password.length == ''){
         this.passwordErrorMsg = ''
         this.passwordErrorStatus = false
       }else{
